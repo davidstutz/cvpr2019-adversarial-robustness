@@ -1,0 +1,188 @@
+\usepackage{amsmath}
+\usepackage{nicefrac}
+\usepackage{amsthm}
+\usepackage{xcolor}
+\usepackage{subcaption}
+\usepackage[inline]{enumitem}
+\usepackage{xspace}
+%\usepackage[labelfont=bf]{caption}
+\usepackage{tabularx}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+
+% spacing
+%\setlength\abovecaptionskip
+\setlength\belowcaptionskip{-6pt} % 10pt
+
+% colors
+\definecolor{colorbrewer0}{RGB}{45,45,45}
+\definecolor{colorbrewer1}{RGB}{228,26,28}
+\definecolor{colorbrewer2}{RGB}{55,126,184}
+\definecolor{colorbrewer3}{RGB}{77,175,74}
+\definecolor{colorbrewer4}{RGB}{152,78,163}
+\definecolor{colorbrewer5}{RGB}{255,127,0}
+\definecolor{colorbrewer6}{RGB}{255,255,51}
+\definecolor{colorbrewer7}{RGB}{166,86,40}
+\definecolor{colorbrewer8}{RGB}{247,129,191}
+\definecolor{colorbrewer9}{RGB}{153,153,153}
+
+\newcommand{\Perp}{\perp\!\!\! \perp}
+\newcommand{\bK}{\mathbf{K}}
+\newcommand{\bX}{\mathbf{X}}
+\newcommand{\bY}{\mathbf{Y}}
+\newcommand{\bk}{\mathbf{k}}
+\newcommand{\bx}{\mathbf{x}}
+\newcommand{\by}{\mathbf{y}}
+\newcommand{\bhy}{\hat{\mathbf{y}}}
+\newcommand{\bty}{\tilde{\mathbf{y}}}
+\newcommand{\bG}{\mathbf{G}}
+\newcommand{\bI}{\mathbf{I}}
+\newcommand{\bg}{\mathbf{g}}
+\newcommand{\bS}{\mathbf{S}}
+\newcommand{\bs}{\mathbf{s}}
+\newcommand{\bM}{\mathbf{M}}
+\newcommand{\bw}{\mathbf{w}}
+\newcommand{\eye}{\mathbf{I}}
+\newcommand{\bU}{\mathbf{U}}
+\newcommand{\bV}{\mathbf{V}}
+\newcommand{\bW}{\mathbf{W}}
+\newcommand{\bn}{\mathbf{n}}
+\newcommand{\bv}{\mathbf{v}}
+\newcommand{\bq}{\mathbf{q}}
+\newcommand{\bR}{\mathbf{R}}
+\newcommand{\bi}{\mathbf{i}}
+\newcommand{\bj}{\mathbf{j}}
+\newcommand{\bp}{\mathbf{p}}
+\newcommand{\bt}{\mathbf{t}}
+\newcommand{\bJ}{\mathbf{J}}
+\newcommand{\bu}{\mathbf{u}}
+\newcommand{\bB}{\mathbf{B}}
+\newcommand{\bD}{\mathbf{D}}
+\newcommand{\bz}{\mathbf{z}}
+\newcommand{\bP}{\mathbf{P}}
+\newcommand{\bC}{\mathbf{C}}
+\newcommand{\bA}{\mathbf{A}}
+\newcommand{\bZ}{\mathbf{Z}}
+\newcommand{\bff}{\mathbf{f}}
+\newcommand{\bF}{\mathbf{F}}
+\newcommand{\bo}{\mathbf{o}}
+\newcommand{\bO}{\mathbf{O}}
+\newcommand{\bc}{\mathbf{c}}
+\newcommand{\bm}{\mathbf{m}}
+\newcommand{\bT}{\mathbf{T}}
+\newcommand{\bQ}{\mathbf{Q}}
+\newcommand{\bL}{\mathbf{L}}
+\newcommand{\bl}{\mathbf{l}}
+\newcommand{\ba}{\mathbf{a}}
+\newcommand{\bE}{\mathbf{E}}
+\newcommand{\bH}{\mathbf{H}}
+\newcommand{\bd}{\mathbf{d}}
+\newcommand{\br}{\mathbf{r}}
+\newcommand{\be}{\mathbf{e}}
+\newcommand{\bb}{\mathbf{b}}
+\newcommand{\bh}{\mathbf{h}}
+\newcommand{\bhh}{\hat{\mathbf{h}}}
+\newcommand{\btheta}{\boldsymbol{\theta}}
+\newcommand{\bTheta}{\boldsymbol{\Theta}}
+\newcommand{\bpi}{\boldsymbol{\pi}}
+\newcommand{\bphi}{\boldsymbol{\phi}}
+\newcommand{\bPhi}{\boldsymbol{\Phi}}
+\newcommand{\bmu}{\boldsymbol{\mu}}
+\newcommand{\bSigma}{\boldsymbol{\Sigma}}
+\newcommand{\bGamma}{\boldsymbol{\Gamma}}
+\newcommand{\bbeta}{\boldsymbol{\beta}}
+\newcommand{\bomega}{\boldsymbol{\omega}}
+\newcommand{\blambda}{\boldsymbol{\lambda}}
+\newcommand{\bLambda}{\boldsymbol{\Lambda}}
+\newcommand{\bkappa}{\boldsymbol{\kappa}}
+\newcommand{\btau}{\boldsymbol{\tau}}
+\newcommand{\balpha}{\boldsymbol{\alpha}}
+\newcommand{\mR}{\mathbb{R}}
+\newcommand{\mN}{\mathbb{N}}
+\newcommand{\mL}{\mathbb{L}}
+\newcommand{\mF}{\mathbb{F}}
+\newcommand{\mE}{\mathbb{E}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cR}{\mathcal{R}}
+\newcommand{\cB}{\mathcal{B}}
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cT}{\mathcal{T}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cP}{\mathcal{P}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cK}{\mathcal{K}}
+\newcommand{\cY}{\mathcal{Y}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cZ}{\mathcal{Z}}
+\def\bgamma{\boldsymbol\gamma}
+
+\newcommand{\figref}[1]{\Fig~\ref{#1}}
+\newcommand{\secref}[1]{Section~\ref{#1}}
+\newcommand{\defref}[1]{Def.~\ref{#1}}
+%\renewcommand{\algref}[1]{Algorithm~\ref{#1}}
+\newcommand{\eqnref}[1]{Eq.~\eqref{#1}}
+\newcommand{\tabref}[1]{Table~\ref{#1}}
+
+\DeclareMathOperator*{\argmax}{argmax~}
+\DeclareMathOperator*{\argmin}{argmin~}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\enc}{enc}
+\DeclareMathOperator{\dec}{dec}
+\DeclareMathOperator{\dis}{dis}
+\newcommand{\inner}[1]{\left\langle#1\right\rangle}
+
+\makeatletter
+\DeclareRobustCommand\onedot{\futurelet\@let@token\@onedot}
+\def\@onedot{\ifx\@let@token.\else.\null\fi\xspace}
+\def\eg{e.g\onedot} \def\Eg{E.g\onedot}
+\def\ie{i.e\onedot} \def\Ie{I.e\onedot}
+\def\cf{cf\onedot} \def\Cf{Cf\onedot}
+\def\etc{etc\onedot} \def\vs{vs\onedot}
+\def\wrt{wrt\onedot}
+\def\dof{d.o.f\onedot}
+\def\etal{et~al\onedot} \def\iid{i.i.d\onedot}
+\def\Fig{Fig\onedot} \def\Eqn{Eqn\onedot} \def\Sec{Sec\onedot} \def\Alg{Alg\onedot}
+\makeatother
+
+% environments
+\newtheoremstyle{small}
+  {2px} % Space above
+  {2px} % Space below
+  {} % Body font
+  {} % Indent amount
+  {\bfseries} % Theorem head font
+  {.} % Punctuation after theorem head
+  {.5em} % Space after theorem head
+  {} % Theorem head spec (can be left empty, meaning `normal')
+\theoremstyle{small}\newtheorem{definition}{Definition}
+\theoremstyle{small}\newtheorem{hypothesis}{Hypothesis}
+\theoremstyle{small}\newtheorem*{hypothesis*}{Hypothesis}
+
+% datasets
+\newcommand{\Fonts}{FONTS\xspace}
+\newcommand{\MNIST}{EMNIST\xspace}
+\newcommand{\Fashion}{F-MNIST\xspace}
+\newcommand{\FashionMNIST}{Fashion-MNIST\xspace}
+\newcommand{\Celeb}{CelebA\xspace}
+
+% training
+\newcommand{\VAEGAN}{VAE-GAN\xspace}
+\newcommand{\VAEGANs}{VAE-GANs\xspace}
+\newcommand{\STN}{STN\xspace}
+\newcommand{\STNs}{STNs\xspace}
+\newcommand{\VAE}{VAE\xspace}
+\newcommand{\VAEs}{VAEs\xspace}
+\newcommand{\GAN}{GAN\xspace}
+\newcommand{\GANs}{GANs\xspace}
+
+% comments
+\newcommand{\bernt}[1]{#1}
+\newcommand{\david}[1]{#1}
+\newcommand{\matthias}[1]{#1}
+\newcommand{\myparagraph}[1]{\vspace{3pt}\noindent{\bf #1}}
+\newcommand{\red}[1]{#1}

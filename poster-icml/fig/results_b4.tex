@@ -1,0 +1,335 @@
+\documentclass[border={2px 2px 2px 2px},varwidth=39.8cm,convert]{standalone}
+\usepackage{graphicx}
+\usepackage{tikz}
+\graphicspath{{../}{../../Stutz2019CVPR/}}
+\RequirePackage{snapshot}
+\newsavebox{\fmbox}
+\newenvironment{fmpage}[1]
+{\begin{lrbox}{\fmbox}\begin{minipage}{#1}}
+        {\end{minipage}\end{lrbox}\fbox{\usebox{\fmbox}}}
+    
+\input{../commands}
+\renewcommand{\rmdefault}{phv}
+\renewcommand{\sfdefault}{phv}
+\renewcommand{\ttdefault}{pcr}
+\begin{document}
+    \hskip 1.9cm
+    \begin{minipage}[t]{6.2cm}
+        \centering
+        \Huge
+        \begin{tabular}{@{}c@{}}\Fonts\\ True Manifold\end{tabular}
+    \end{minipage}
+    \hskip 0.3cm
+    \begin{minipage}[t]{6.2cm}
+        \centering
+        \Huge
+        \begin{tabular}{@{}c@{}}\Fonts\\ Learned Manifold\end{tabular}
+    \end{minipage}
+    \hskip 0.3cm
+    \begin{minipage}[t]{8.4cm}
+        \centering
+        \Huge
+        \begin{tabular}{@{}c@{}}\MNIST\\ Learned Manifold\end{tabular}
+    \end{minipage}
+    \hskip 0.3cm
+    \begin{minipage}[t]{8.4cm}
+        \centering
+        \Huge
+        \begin{tabular}{@{}c@{}}\Fashion\\ Learned Manifold\end{tabular}
+    \end{minipage}
+    \hskip 0.3cm
+    \begin{minipage}[t]{3.6cm}
+        \centering
+        \Huge
+        \begin{tabular}{@{}c@{}}\Celeb\\[-8px] \LARGE Learned\\[-10px] \LARGE Manifold\end{tabular}
+    \end{minipage}
+    
+    
+    \begin{minipage}{1.9cm}\Huge
+        \rotatebox[]{90}{\hspace*{-1.75cm}\begin{tabular}{c}On-\\[-2px]Manifold\end{tabular}\hspace*{0.5cm}\begin{tabular}{c}\\[-2px]Regular\end{tabular}\hskip 1.5cm}
+    \end{minipage}
+    \begin{fmpage}{6.2cm}
+        \begin{minipage}[t]{2cm}
+            \vskip 0px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_off/1_0_image_1}.png}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_off/1_0_attack_3}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries D};\end{tikzpicture}
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_off/1_0_perturbation_0.074791}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.074791$};\end{tikzpicture}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_on/1_0_attack_3}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries D};\end{tikzpicture}
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_on/1_0_perturbation_0.907812}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.907812$};\end{tikzpicture}
+        \end{minipage}
+        \begin{minipage}[t]{2cm}
+            \vskip 0px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_off/2_0_image_2}.png}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_off/2_0_attack_4}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries E};\end{tikzpicture}
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_off/2_0_perturbation_0.131621}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.131621$};\end{tikzpicture}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_on/2_1_attack_6}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries G};\end{tikzpicture}
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_on/2_1_perturbation_0.986799}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.986799$};\end{tikzpicture}
+        \end{minipage}
+        \begin{minipage}[t]{2cm}
+            \vskip 0px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_off/30_1_image_0}.png}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_off/30_0_attack_1}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries E};\end{tikzpicture}
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_off/30_0_perturbation_0.0838292}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.0838292$};\end{tikzpicture}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_on/30_1_attack_5}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries F};\end{tikzpicture}
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_on/30_1_perturbation_0.993491}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.993491$};\end{tikzpicture}
+        \end{minipage}
+    \end{fmpage}
+    \hskip 0.1cm
+    \begin{fmpage}{6.2cm}
+        \begin{minipage}[t]{2cm}
+            \vskip 0px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_off/14_0_image_4}.png}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_off/14_0_attack_1}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries B};\end{tikzpicture}
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_off/14_0_perturbation_0.124797}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.124797$};\end{tikzpicture}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_learned_on_class/14_0_attack_6}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries G};\end{tikzpicture}
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_learned_on_class/14_0_perturbation_0.832926}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.832926$};\end{tikzpicture}
+        \end{minipage}
+        \begin{minipage}[t]{2cm}
+            \vskip 0px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_off/16_1_image_6}.png}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_off/16_1_attack_4}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries E};\end{tikzpicture}
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_off/16_1_perturbation_0.238741}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.238741$};\end{tikzpicture}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_learned_on_class/16_1_attack_5}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries F};\end{tikzpicture}
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_learned_on_class/16_1_perturbation_0.805965}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.805965$};\end{tikzpicture}
+        \end{minipage}
+        \begin{minipage}[t]{2cm}
+            \vskip 0px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_off/30_0_image_0}.png}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_off/30_0_attack_1}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries B};\end{tikzpicture}
+    
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_off/30_0_perturbation_0.0838292}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.0838292$};\end{tikzpicture}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_learned_on_class/30_0_attack_1}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries B};\end{tikzpicture}
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_learned_on_class/30_0_perturbation_0.789231}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.789231$};\end{tikzpicture}
+        \end{minipage}
+    \end{fmpage}
+    \hskip 0.1cm
+    \begin{fmpage}{8.4cm}
+        \begin{minipage}[t]{2cm}
+            \vskip 0px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/emnist_off/684_0_image_2}.png}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/emnist_off/684_0_attack_4}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries 4};\end{tikzpicture}
+            
+            \includegraphics[height=2cm]{{gfx/experiments/emnist_off/684_0_perturbation_0.0892201}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.26158$};\end{tikzpicture}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/emnist_learned_on_class/684_0_attack_8}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries 8};\end{tikzpicture}
+            
+            \includegraphics[height=2cm]{{gfx/experiments/emnist_learned_on_class/684_0_perturbation_0.945532}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.827215$};\end{tikzpicture}
+        \end{minipage}
+%        \begin{minipage}[t]{2cm}
+%            \vskip 0px
+%            
+%            \includegraphics[height=2cm]{{gfx/experiments/emnist_off/50_0_image_2}.png}
+%            \vskip 4px
+%            
+%            \includegraphics[height=2cm]{{gfx/experiments/emnist_off/50_0_attack_3}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries 3};\end{tikzpicture}
+%            
+%            \includegraphics[height=2cm]{{gfx/experiments/emnist_off/50_0_perturbation_0.0518749}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.0518749$};\end{tikzpicture}
+%            \vskip 4px
+%            
+%            \includegraphics[height=2cm]{{gfx/experiments/emnist_learned_on_class/50_0_attack_7}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries 7};\end{tikzpicture}
+%            
+%            \includegraphics[height=2cm]{{gfx/experiments/emnist_learned_on_class/50_0_perturbation_0.664503}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.664503$};\end{tikzpicture}
+%        \end{minipage}
+        \begin{minipage}[t]{2cm}
+            \vskip 0px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/emnist_off/858_0_image_3}.png}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/emnist_off/858_0_attack_0}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries 0};\end{tikzpicture}
+            
+            \includegraphics[height=2cm]{{gfx/experiments/emnist_off/858_0_perturbation_0.208487}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.0499305$};\end{tikzpicture}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/emnist_learned_on_class/858_0_attack_0}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries 0};\end{tikzpicture}
+    
+            \includegraphics[height=2cm]{{gfx/experiments/emnist_learned_on_class/858_0_perturbation_0.972695}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.975613$};\end{tikzpicture}
+        \end{minipage}
+        \begin{minipage}[t]{2cm}
+            \vskip 0px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/emnist_off/339_0_image_9}.png}
+            \vskip 4px
+    
+            \includegraphics[height=2cm]{{gfx/experiments/emnist_off/339_0_attack_4}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries 4};\end{tikzpicture}
+            
+            \includegraphics[height=2cm]{{gfx/experiments/emnist_off/339_0_perturbation_0.109599}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.184329$};\end{tikzpicture}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/emnist_learned_on_class/339_0_attack_4}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries 4};\end{tikzpicture}
+            
+            \includegraphics[height=2cm]{{gfx/experiments/emnist_learned_on_class/339_0_perturbation_0.99064}.png}%\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.820813$};\end{tikzpicture}
+        \end{minipage}
+        \begin{minipage}[t]{2cm}
+            \vskip 0px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/emnist_off/134_0_image_8}.png}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/emnist_off/134_0_attack_3}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries 3};\end{tikzpicture}
+            
+            \includegraphics[height=2cm]{{gfx/experiments/emnist_off/134_0_perturbation_0.255656}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.255656$};\end{tikzpicture}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/emnist_learned_on_class/134_0_attack_3}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries 3};\end{tikzpicture}
+            
+            \includegraphics[height=2cm]{{gfx/experiments/emnist_learned_on_class/134_0_perturbation_0.963515}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.963515$};\end{tikzpicture}
+        \end{minipage}
+    \end{fmpage}
+    \hskip 0.1cm
+    \begin{fmpage}{8.4cm}
+        \begin{minipage}[t]{2cm}
+            \vskip 0px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fashion_off/20_0_image_2}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries Pullover};\end{tikzpicture}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fashion_off/20_0_attack_6}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries Shirt};\end{tikzpicture}
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fashion_off/20_0_perturbation_0.164811}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.164811$};\end{tikzpicture}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fashion_learned_on_class/20_0_attack_6}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries Shirt};\end{tikzpicture}
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fashion_learned_on_class/20_0_perturbation_0.789748}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.789748$};\end{tikzpicture}
+        \end{minipage}
+        \begin{minipage}[t]{2cm}
+            \vskip 0px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fashion_off/44_0_image_6}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries Shirt};\end{tikzpicture}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fashion_off/44_0_attack_0}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries \begin{tabular}{@{}l@{}}T-Shirt/\\Top\end{tabular}};\end{tikzpicture}
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fashion_off/44_0_perturbation_0.0348602}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.0348602$};\end{tikzpicture}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fashion_learned_on_class/44_0_attack_2}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries Pullover};\end{tikzpicture}
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fashion_learned_on_class/44_0_perturbation_0.764691}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.764691$};\end{tikzpicture}
+        \end{minipage}
+%        \begin{minipage}[t]{2cm}
+%            \vskip 0px
+%            
+%            \includegraphics[height=2cm]{{gfx/experiments/fashion_off/66_0_image_2}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries Pullover};\end{tikzpicture}
+%            \vskip 4px
+%            
+%            \includegraphics[height=2cm]{{gfx/experiments/fashion_off/66_0_attack_3}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries Dress};\end{tikzpicture}
+%            
+%            \includegraphics[height=2cm]{{gfx/experiments/fashion_off/66_0_perturbation_0.112019}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.112019$};\end{tikzpicture}
+%            \vskip 4px
+%            
+%            \includegraphics[height=2cm]{{gfx/experiments/fashion_learned_on_class/66_0_attack_0}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries \begin{tabular}{@{}l@{}}T-Shirt/\\Top\end{tabular}};\end{tikzpicture}
+%            
+%            \includegraphics[height=2cm]{{gfx/experiments/fashion_learned_on_class/66_0_perturbation_0.607696}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.607696$};\end{tikzpicture}
+%        \end{minipage}
+        \begin{minipage}[t]{2cm}
+            \vskip 0px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fashion_off/181_0_image_9}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries \begin{tabular}{@{}l@{}}Ankle\\Boot\end{tabular}};\end{tikzpicture}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fashion_off/181_0_attack_7}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries Sneaker};\end{tikzpicture}
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fashion_off/181_0_perturbation_0.153112}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.153112$};\end{tikzpicture}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fashion_learned_on_class/181_0_attack_7}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries Sneaker};\end{tikzpicture}
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fashion_learned_on_class/181_0_perturbation_0.831184}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.831184$};\end{tikzpicture}
+        \end{minipage}
+        \begin{minipage}[t]{2cm}
+            \vskip 0px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fashion_off/34_0_image_8}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries Bag};\end{tikzpicture}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fashion_off/34_0_attack_5}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries Sandal};\end{tikzpicture}
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fashion_off/34_0_perturbation_0.240982}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.240982$};\end{tikzpicture}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fashion_learned_on_class/34_1_attack_0}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries \begin{tabular}{@{}l@{}}T-Shirt/\\Top\end{tabular}};\end{tikzpicture}
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fashion_learned_on_class/34_1_perturbation_0.644909}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,black] at (-2,2){\large\bfseries ${\times}0.644909$};\end{tikzpicture}
+        \end{minipage}
+    \end{fmpage}
+    \hskip 0.1cm
+    \begin{fmpage}{3.6cm}
+        \begin{minipage}[t]{1.7cm}
+            \vskip 0px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/celeba_off/86_0_image_1}.png}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/celeba_off/86_0_attack_0}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-1.75,2){\large\bfseries Female};\end{tikzpicture}
+            
+            \includegraphics[height=2cm]{{gfx/experiments/celeba_off/86_0_perturbation_magnitude_1.08646}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,white] at (-1.75,2){\large\bfseries ${\times}0.196932$};\end{tikzpicture}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/celeba_learned_on_class/86_1_attack_0}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-1.75,2){\large\bfseries Female};\end{tikzpicture}
+            
+            \includegraphics[height=2cm]{{gfx/experiments/celeba_learned_on_class/86_1_perturbation_magnitude_1.30078}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,white] at (-1.75,2){\large\bfseries ${\times}0.738173$};\end{tikzpicture}
+        \end{minipage}
+        \begin{minipage}[t]{1.7cm}
+            \vskip 0px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/celeba_off/348_0_image_0}.png}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/celeba_off/348_0_attack_1}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-1.75,2){\large\bfseries Male};\end{tikzpicture}
+            
+            \includegraphics[height=2cm]{{gfx/experiments/celeba_off/348_0_perturbation_magnitude_1.22712}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,white] at (-1.75,2){\large\bfseries ${\times}0.164174$};\end{tikzpicture}
+            \vskip 4px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/celeba_learned_on_class/348_2_attack_1}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-1.75,2){\large\bfseries Male};\end{tikzpicture}
+            
+            \includegraphics[height=2cm]{{gfx/experiments/celeba_learned_on_class/348_2_perturbation_magnitude_1.38224}.png} %\begin{tikzpicture}[overlay]\node[anchor=north west,white] at (-1.75,2){\large\bfseries ${\times}0.725857$};\end{tikzpicture}
+        \end{minipage}
+    \end{fmpage}
+\end{document}

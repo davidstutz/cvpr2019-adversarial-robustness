@@ -1,0 +1,2973 @@
+% Encoding: UTF-8
+
+@STRING{CVPR = {Proc. IEEE Conf. on Computer Vision and Pattern	Recognition (CVPR)}}
+@STRING{EMMCVPR = {Energy Minimization Methods in Computer Vision and Pattern Recognition (EMMCVPR)}}
+@STRING{CVPRWORK = {Proc. IEEE Conf. on Computer Vision and Pattern	Recognition (CVPR) Workshops}}
+@STRING{ECCV = {Proc. of the European Conf. on Computer Vision (ECCV)}}
+@STRING{ECCVWORK = {Proc. of the European Conf. on Computer Vision (ECCV) Workshops}}
+@STRING{ICCV = {Proc. of the IEEE International Conf. on Computer Vision (ICCV)}}
+@STRING{ICCVWORK = {Proc. of the IEEE International Conf. on Computer Vision (ICCV) Workshops}}
+@STRING{ACCV = {Proc. of the Asian Conf. on Computer Vision (ACCV)}}
+@STRING{ACCVWORK = {Proc. of the Asian Conf. on Computer Vision (ACCV) Workshops}}
+@STRING{SCIA = {Scandinavian Conference on Image Analysis (SCIA)}}
+@STRING{IVCNZ = {Proc. of International Conf. on Image and Vision Computing New Zealand (IVCNZ)}}
+@STRING{WACV = {Proc. of the IEEE Winter Conference on Applications of Computer Vision (WACV)}}
+@STRING{CVWW = {Proc. of the Computer Vision Winter Workshop (CVWW)}}
+@STRING{ISA = {Proc. of the ISPRS Workshop on Image Sequence Analysis (ISA)}}
+@STRING{EUROCAST = {Proc. of the International Conf. on Computer Aided Systems Theory (EUROCAST)}}
+@STRING{NIPS = {Advances in Neural Information Processing Systems (NIPS)}}
+@STRING{NIPSWORK = {Advances in Neural Information Processing Systems (NIPS) Workshops}}
+@STRING{AISTATS = {Conference on Artificial Intelligence and Statistics (AISTATS)}}
+@STRING{JMLR = {Journal of Machine Learning Research (JMLR)}}
+@STRING{PAMI = {IEEE Trans. on Pattern Analysis and Machine Intelligence (PAMI)}}
+@STRING{CMVP = {Computational Models of Visual Processing}}
+@STRING{IJCV = {International Journal of Computer Vision (IJCV)}}
+@STRING{JMIV = {Journal of Mathematical Imaging and Vision  (JMIV)}}
+@STRING{PR = {Pattern Recognition}}
+@STRING{PRL = {Pattern Recognition Letters}}
+@STRING{DAGM = {Proc. of the DAGM Symposium on Pattern Recognition (DAGM)}}
+@STRING{GCPR = {Proc. of the German Conference on Pattern Recognition (GCPR)}}
+@STRING{SI3D = {Proc. of the Symposium on Interactive 3D Graphics (SI3D)}}
+@STRING{CVS = {Computer Vision Systems}}
+@STRING{ESRT = {Proc. of the Eurographics Symposium on Rendering Techniques (ESRT)}}
+@STRING{BMVC = {Proc. of the British Machine Vision Conf. (BMVC)}}
+@STRING{PCS = {Proc. of the Picture Coding Symposium (PCS)}}
+@STRING{CAIP = {Proc. of the International Conf. on Computer Analysis of Images and Patterns (CAIP)}}
+@STRING{SSVM = {Proc. of the International Conf. on Scale Space and Variational Methods in Computer Vision (SSVM)}}
+@STRING{ICM = {Proc. of the International Conf. on Multimedia (ICM)}}
+@STRING{IUW = {Image Understanding Workshop (IUW)}}
+@STRING{ICML = {Proc. of the International Conf. on Machine learning (ICML)}}
+@STRING{ICMLWORK = {Proc. of the International Conf. on Machine learning (ICML) Workshops}}
+@STRING{ICLR = {Proc. of the International Conf. on Learning Representations (ICLR)}}
+@STRING{ICLRWORK = {Proc. of the International Conf. on Learning Representations (ICLR) Workshops}}
+@STRING{BN = {Bayesian Nonparametrics (BN)}}
+@STRING{CVIU = {Computer Vision and Image Understanding (CVIU)}}
+@STRING{JRTIP = {Journal of Real-Time Image Processing (JRTIP)}}
+@STRING{ICIP = {Proc. IEEE International Conf. on Image Processing (ICIP)}}
+@STRING{JISE = {Journal of Information Science and Engineering (JISE)}}
+@STRING{MVA = {Machine Vision and Applications (MVA)}}
+@STRING{ICPR = {Proc. of the International Conf. on Pattern Recognition (ICPR)}}
+@STRING{ICVS = {Proc. of the International Conf. on Computer Vision Systems (ICVS)}}
+@STRING{ICASSP = {Proc. IEEE Conf. on Acoustics, Speech and Signal Processing (ICASSP)}}
+@STRING{ITSC = {Proc. IEEE Conf. on Intelligent Transportation Systems (ITSC)}}
+@STRING{ITSM = {Proc. IEEE Intelligent Transportation Systems Magazine (ITSM)}}
+@STRING{IV = {Proc. IEEE Intelligent Vehicles Symposium (IV)}}
+@STRING{IVWORK = {Proc. IEEE Intelligent Vehicles Symposium (IV) Workshops}}
+@STRING{IS = {Intelligent Systems (IS)}}
+@STRING{TITS = {IEEE Trans. on Intelligent Transportation Systems (TITS)}}
+@STRING{SIGGRAPH = {ACM Trans. on Graphics (SIGGRAPH)}}
+@STRING{TVC = {The Visual Computer}}
+@STRING{CGIP = {Computer Graphics and Image Processing (CGIP)}}
+@STRING{SGP = {Eurographics Symposium on Geometry Processing (SGP)}}
+@STRING{VCG = {IEEE Trans. on Visualization and Computer Graphics (VCG)}}
+@STRING{ICRA = {Proc. IEEE International Conf. on Robotics and Automation (ICRA)}}
+@STRING{ICRAWORK = {Proc. IEEE International Conf. on Robotics and Automation (ICRA) Workshops}}
+@STRING{ACRA = {Proc. IEEE Australasian Conf. on Robotics and Automation (ACRA)}}
+@STRING{IROS = {Proc. IEEE International Conf. on Intelligent Robots and Systems (IROS)}}
+@STRING{IROSWORK = {Proc. IEEE International Conf. on Intelligent Robots and Systems (IROS) Workshops}}
+@STRING{CORL = {Proc. Conf. on Robot Learning (CoRL)}}
+@STRING{IJRR = {International Journal of Robotics Research (IJRR)}}
+@STRING{RAL = {IEEE Robotics and Automation Letters (RA-L)}}
+@STRING{IJARS = {International Journal of Advanced Robotic Systems (IJARS)}}
+@STRING{IAV = {Proc. IFAC Symposium on Intelligent Autonomous Vehicles (IAV)}}
+@STRING{ML = {Machine Learning}}
+@STRING{TSP = {IEEE Trans. on Signal Processing (TSP)}}
+@STRING{SPM = {Signal Processing Magazine}}
+@STRING{TIP = {IEEE Trans. on Image Processing (TIP)}}
+@STRING{JRSS = {Journal of the Royal Statistical Society (JRSS)}}
+@STRING{SAC = {Statistics and Computing}}
+@STRING{SS = {Statistical Science}}
+@STRING{JASA = {Journal of the American Statistical Association (JASA)}}
+@STRING{AAAI = {Proc. of the Conf. on Artificial Intelligence (AAAI)}}
+@STRING{THREEDPVT = {International Symposium on 3D Data Processing, Visualization and Transmission (3DPVT)}}
+@STRING{THREEDIM = {Proc. of the International Conf. on 3D Digital Imaging and Modeling (THREEDIM)}}
+@STRING{THREEDIMPVT = {Proc. of the International Conf. on 3D Digital Imaging, Modeling, Data Processing, Visualization and Transmission (THREEDIMPVT)}}
+@STRING{THREEDV = {Proc. of the International Conf. on 3D Vision (3DV)}}
+@STRING{IJCAI = {Proc. of the International Joint Conf. on Artificial Intelligence (IJCAI)}}
+@STRING{BIOINF = {Bioinformatics}}
+@STRING{RAS = {Robotics and Autonomous Systems (RAS)}}
+@STRING{AI = {Artificial Intelligence (AI)}}
+@STRING{IVC = {Image and Vision Computing (IVC)}}
+@STRING{MIA = {Medical Image Analysis (MIA)}}
+@STRING{TG = {ACM Trans. on Graphics}}
+@STRING{CGF = {Computer Graphics Forum}}
+@STRING{CG = {Computers \& Graphics}}
+@STRING{TC = {IEEE Trans. on Computers}}
+@STRING{TCYB = {IEEE Trans. on Cybernetics}}
+@STRING{COMPUTER = {IEEE Computer}}
+@STRING{TR = {IEEE Trans. on Robotics}}
+@STRING{VISAPP = {Proc. of the Conf. on Computer Vision Theory and Applications (VISAPP)}}
+@STRING{AVSS = {Proc. of International Conf. on Advanced Video and Signal Based Surveillance (AVSS)}}
+@STRING{ICCEASIA = {Proc. of International Conf. on Consumer Electronics-Asia (ICCE Asia)}}
+@STRING{EML = {Encyclopedia of Machine Learning}}
+@STRING{IAI = {Proc. IEEE Southwest Symposium on Image Analysis and Interpretation}}
+@STRING{RSS = {Proc. Robotics: Science and Systems (RSS)}}
+@STRING{ECMR = {Proc. European Conf. on Mobile Robotics (ECMR)}}
+@STRING{PCV = {Proc. Photogrammetric Computer Vision (PCV)}}
+@STRING{ISVC = {Proc. of the International Symposium on Advances in Visual Computing (ISVC)}}
+@STRING{ACVPR = {Advances in Computer Vision and Pattern Recognition (ACVPR)}}
+@STRING{LSVGL = {Large-Scale Visual Geo-Localization}}
+@STRING{ICANN = {Proc. of the International Conf. on Artificial Neural Networks (ICANN)}}
+@STRING{ICAINN = {Proc. of the International Conf. on Artificial Intelligence and Neural Networks (ICAINN)}}
+@STRING{ISER = {Proc. of the International Symposium on Experimental Robotics (ISER)}}
+@STRING{ISRR = {Proc. of the International Symposium on Robotics Research (ISRR)}}
+@STRING{NRLQ = {Naval Research Logistics Quarterly}}
+@STRING{ISMAR = {Proc. of the International Symposium on Mixed and Augmented Reality (ISMAR)}}
+@STRING{GPGPU = {Proc. of the Workshop on General Purpose Processing on Graphics Processing Units (GPGPU)}}
+@STRING{ALMC = {Advances in Large Margin Classifiers}}
+@STRING{CPIA = {In ISPRS Conf. Photogrammetric Image Analysis (PIA)}}
+@STRING{IIW = {ISPRS Intercommission Workshop}}
+@STRING{AVC = {Alvey Vision Conference}}
+@STRING{COGIS = {Cognitive Systems with Interactive Sensors (COGIS)}}
+@STRING{JIVP = {Journal on Image and Video Processing (JIVP)}}
+@STRING{AR = {Autonomous Robots}}
+@STRING{ARC = {Annual Reviews in Control}}
+@STRING{TRA = {IEEE Trans. on Robotics and Automation (TRA)}}
+@STRING{JN = {Journal of Navigation}}
+@STRING{RAM = {Robotics and Automation Magazine (RAM)}}
+@STRING{JPRS = {ISPRS Journal of Photogrammetry and Remote Sensing (JPRS)}}
+@STRING{APRS = {ISPRS Annals of Photogrammetry, Remote Sensing and Spatial Information Sciences (APRS)}}
+@STRING{EUROCOLT = {Proc. of European Conf. on Computational Learning Theory (EUROCOLT)}}
+@STRING{OE = {Optical Engineering}}
+@STRING{SMC = {IEEE Trans. on Systems, Man and Cybernetics (TSMC)}}
+@STRING{NC = {Neural Computation}}
+@STRING{NN = {Neural Networks}}
+@STRING{JOS = {Journal of the Optical Society America (JOSA)}}
+@STRING{JBE = {Journal of Basic Engineering (JBE)}}
+@STRING{JFR = {Journal of Field Robotics (JFR)}}
+@STRING{SIAM = {Journal of the Society for Industrial and Applied Mathematics (SIAM)}}
+@STRING{JIS = {Journal of Imaging Sciences (SIAM)}}
+@STRING{TAC = {IEEE Trans. on Automatic Control (TAC)}}
+@STRING{JCGS = {Journal of Computational and Graphical Statistics (JCGS)}}
+@STRING{CGA = {IEEE Computer Graphics and Applications (CGA)}}
+@STRING{ACM = {Communications of the ACM}}
+@STRING{ARXIV = {arXiv.org}}
+@STRING{VMV = {Vision, Modeling and Visualization (VMV)}}
+@STRING{NETWORKS = {Networks}}
+@STRING{PETS = {Performance Evaluation of Tracking and Surveillance}}
+@STRING{CHI = {Proc. of the Conf. on Human Factors in Computing Systems}}
+@STRING{FTCGV = {Foundations and Trends in Computer Graphics and Vision}}
+@STRING{BC = {Biological Cybernetics}}
+@STRING{GPID = {Geometric Properties for Incomplete Data}}
+@STRING{MICCAI = {Medical Image Computing and Computer-Assisted Intervention (MICCAI)}}
+@STRING{EXPERT = {IEEE Expert}}
+@STRING{IFAC = {Proc. of the IFAC Symposium on Intelligent Autonomous Vehicles (IFAC)}}
+@STRING{RIC = {Readings in Computer Vision: Issues, Problems, Principles, and Paradigms (RIC)}}
+@STRING{AAM = {Advances in Applied Mathematics (AAM)}}
+@STRING{SENSORS = {Sensors}}
+@STRING{ESA = {Expert Systems With Applications (ESA)}}
+@STRING{RRIV = {Registration and Recognition in Images and Videos}}
+@STRING{TMI = {The Mathematical Intelligencer}}
+@STRING{ESPC = {Proc. of European Signal Processing Conference (ESPC)}}
+@STRING{MCNCA = {Multi-Camera Networks: Concepts and Applications (MCNCA)}}
+@STRING{ASS = {International Conf. on Advances in System Simulation (ASS)}}
+@STRING{Nature = {Nature}}
+@STRING{NatureNeuro = {Nature Neuroscience}}
+@STRING{PNAS = {Proceedings of the National Academy of Sciences (PNAS)}}
+@STRING{PLOSCB = {PLoS Computational Biology (PLOSCB)}}
+@STRING{NCNN = {Network: computation in neural systems}}
+@STRING{JGT = {Journal of Graphics Tools}}
+@STRING{COGSCI = {Proc. of the Annual Meeting of the Cognitive Science Society}}
+@STRING{HUMANOIDS = {IEEE-RAS International Conference on Humanoid Robots (Humanoids)}}
+@STRING{EICC = {Eurographics Italian Chapter Conference}}
+@STRING{NATURE = {Nature Communications}}
+@STRING{SPL = {IEEE Signal Processing Letters}}
+@STRING{SRMAM = {SPIE Proceedings of Storage and Retrieval Methods and Applications for Multimedia}}
+@STRING{SP = {Proc. of the IEEE Symposium on Security and Privacy}}
+@STRING{SPWORK = {Proc. of the IEEE Symposium on Security and Privacy Workshops}}
+@STRING{CUV = {Proc. of the International Conference on Computer Aided Verification}}
+@STRING{AL = {Artificial Life}}
+@STRING{AISEC = {Proc. of the ACM Workshop on Artificial Intelligence and Security}}
+@STRING{HVEI = {Human Vision and Electronic Imaging}}
+@STRING{WIFS = {Proc. of the IEEE Workshop on Information Forensics and Security}}
+@STRING{ICMLA = {Proc. of the International Conf. on Machine Learning and Applications (ICMLA)}}
+@STRING{IJCB = {Proc. of the IEEE International Joint Conference on Biometrics, {IJCB} 2017}}
+@STRING{FRAI = {Frontiers in Robotics and AI}}
+@STRING{USENIX = {USENIX Security Symposium}}
+@STRING{USENIXWORK = {USENIX Security Symposium Workshops}}
+%@STRING{ASIACCS = {Proc. of the ACM Symposium on Information, Computer and Communications Security}}
+@STRING{ASIACCS = {Proc. of the ACM on Asia Conference on Computer and Communications Security (AsiaCCS)}}
+@STRING{DCC = {Proc. of the IEEE Data Compression Conference}}
+@STRING{NEUROCOMPUTING = {Neurocomputing}}
+@STRING{EMNLP = {Procc of the Conference on Empirical Methods in Natural Language Processing}}
+% ---
+@STRING{CVPRREVIEW = {Review for Proc. IEEE Conf. on Computer Vision and Pattern Recognition}}
+@STRING{NIPSREVIEW = {Review for Advances in Neural Information Processing Systems (NIPS)}}
+
+% ---
+% ---
+
+@STRING{CVPR = {CVPR}}
+@STRING{EMMCVPR = {EMMCVPR}}
+@STRING{CVPRWORK = {CVPR Workshops}}
+@STRING{ECCV = {ECCV}}
+@STRING{ECCVWORK = {ECCV Workshops}}
+@STRING{ICCV = {ICCV}}
+@STRING{ICCVWORK = {ICCV Workshops}}
+@STRING{ACCV = {ACCV}}
+@STRING{ACCVWORK = {ACCV Workshops}}
+@STRING{SCIA = {SCIA}}
+@STRING{IVCNZ = {IVCNZ}}
+@STRING{WACV = {WACV}}
+@STRING{CVWW = {CVWW}}
+@STRING{ISA = {ISA}}
+@STRING{IUW = {IUW}}
+@STRING{EUROCAST = {EUROCAST}}
+@STRING{NIPS = {NIPS}}
+@STRING{NIPSWORK = {NIPS Workshops}}
+@STRING{AISTATS = {AISTATS}}
+@STRING{JMLR = {JMLR}}
+@STRING{PAMI = {PAMI}}
+@STRING{CMVP = {CMVP}}
+@STRING{IJCV = {IJCV}}
+@STRING{JMIV = {JMIV}}
+@STRING{PR = {Pattern Recognition}}
+@STRING{PRL = {Pattern Recognition Letters}}
+@STRING{DAGM = {DAGM}}
+@STRING{GCPR = {GCPR}}
+@STRING{SI3D = {SI3D}}
+@STRING{CVS = {CVS}}
+@STRING{ESRT = {ESRT}}
+@STRING{BMVC = {BMVC}}
+@STRING{PCS = {PCS}}
+@STRING{CAIP = {CAIP}}
+@STRING{SSVM = {SSVM}}
+@STRING{ICM = {ICM}}
+@STRING{ICML = {ICML}}
+@STRING{ICMLWORK = {ICML Workshops}}
+@STRING{ICLR = {ICLR}}
+@STRING{ICLRWORK = {ICLR Workshops}}
+@STRING{BN = {BN}}
+@STRING{CVIU = {CVIU}}
+@STRING{JRTIP = {JRTIP}}
+@STRING{ICIP = {ICIP}}
+@STRING{JISE = {JISE}}
+@STRING{MVA = {MVA}}
+@STRING{ICPR = {ICPR}}
+@STRING{ICVS = {ICVS}}
+@STRING{ICASSP = {ICASSP}}
+@STRING{ITSC = {ITSC}}
+@STRING{ITSM = {ITS Magazine}}
+@STRING{IV = {IV}}
+@STRING{IVWORK = {IV Workshops}}
+@STRING{IS = {IS}}
+@STRING{TITS = {TITS}}
+@STRING{SIGGRAPH = {SIGGRAPH}}
+@STRING{TVC = {The Visual Computer}}
+@STRING{CGIP = {CGIP}}
+@STRING{SGP = {SGP}}
+@STRING{VCG = {VCG}}
+@STRING{ICRA = {ICRA}}
+@STRING{ICRAWORK = {ICRA Workshops}}
+@STRING{ACRA = {ACRA}}
+@STRING{IROS = {IROS}}
+@STRING{IROSWORK = {IROS Workshops}}
+@STRING{CORL = {CoRL}}
+@STRING{IJRR = {IJRR}}
+@STRING{RAL = {RA-L}}
+@STRING{IJARS = {IJARS}}
+@STRING{IAV = {IAV}}
+@STRING{ML = {Machine Learning}}
+@STRING{TSP = {TSP}}
+@STRING{SPM = {SPM}}
+@STRING{TIP = {TIP}}
+@STRING{CVGIP = {CVGIP}}
+@STRING{JRSS = {JRSS}}
+@STRING{SAC = {SAC}}
+@STRING{SS = {SS}}
+@STRING{JASA = {JASA}}
+@STRING{AAAI = {AAAI}}
+@STRING{THREEDPVT = {3DPVT}}
+@STRING{THREEDIM = {3DIM}}
+@STRING{THREEDIMPVT = {3DIMPVT}}
+@STRING{THREEDV = {3DV}}
+@STRING{IJCAI = {IJCAI}}
+@STRING{BIOINF = {Bioinformatics}}
+@STRING{RAS = {RAS}}
+@STRING{AI = {AI}}
+@STRING{IVC = {IVC}}
+@STRING{MIA = {Medical Image Analysis}}
+@STRING{TG = {Transaction on Graphics}}
+@STRING{CGF = {Computer Graphics Forum}}
+@STRING{CG = {Computers \& Graphics}}
+@STRING{TC = {TC}}
+@STRING{TCYB = {TCYB}}
+@STRING{COMPUTER = {Computer}}
+@STRING{TRO = {TRO}}
+@STRING{VISAPP = {VISAPP}}
+@STRING{AVSS = {AVSS}}
+@STRING{ICCEASIA = {ICCE Asia}}
+@STRING{EML = {Encyclopedia of Machine Learning}}
+@STRING{IAI = {IAI}}
+@STRING{RSS = {RSS}}
+@STRING{ECMR = {ECMR}}
+@STRING{PCV = {PCV}}
+@STRING{ISVC = {ISVC}}
+@STRING{ACVPR = {ACVPR)}}
+@STRING{LSVGL = {Large-Scale Visual Geo-Localization}}
+@STRING{ICANN = {ICANN}}
+@STRING{ICAINN = {ICAINN}}
+@STRING{ISER = {ISER}}
+@STRING{ISRR = {ISRR}}
+@STRING{NRLQ = {NRLQ}}
+@STRING{ISMAR = {ISMAR}}
+@STRING{GPPGPU = {GPGPU}}
+@STRING{ALMC = {ALMC}}
+@STRING{CPIA = {CPIA}}
+@STRING{IIW = {IIW}}
+@STRING{AVC = {AVC}}
+@STRING{COGIS = {COGIS}}
+@STRING{JIVP = {JIVP}}
+@STRING{AR = {AR}}
+@STRING{ARC = {ARC}}
+@STRING{TRA = {TRA}}
+@STRING{JN = {JN}}
+@STRING{RAM = {RAM}}
+@STRING{JPRS = {JPRS}}
+@STRING{APRS = {APRS}}
+@STRING{EUROCOLT = {EUROCOLT}}
+@STRING{OE = {OE}}
+@STRING{SMC = {SMC}}
+@STRING{NC = {NC}}
+@STRING{JOS = {JOS}}
+@STRING{JBE = {JBE}}
+@STRING{JFR = {JFR}}
+@STRING{SIAM = {SIAM}}
+@STRING{JIS = {SIAM}}
+@STRING{TAC = {TAC}}
+@STRING{NN = {NN}}
+@STRING{JCGS = {JCGS}}
+@STRING{CGA = {CGA}}
+@STRING{ACM = {ACM}}
+@STRING{ARXIV = {arXiv.org}}
+@STRING{VMV = {VMV}}
+@STRING{NETWORKS = {Networks}}
+@STRING{PETS = {PETS}}
+@STRING{CHI = {CHI}}
+@STRING{BC = {Biological Cybernetics}}
+@STRING{GPID = {Geometric Properties for Incomplete Data}}
+@STRING{MICCAI = {MICCAI}}
+@STRING{EXPERT = {IEEE Expert}}
+@STRING{IFAC = {IFAC}}
+@STRING{AAM = {AAM}}
+@STRING{SENSORS = {Sensors}}
+@STRING{ESA = {ESA}}
+@STRING{RRIV = {Registration and Recognition in Images and Videos}}
+@STRING{TMI = {The Mathematical Intelligencer}}
+@STRING{ESPC = {ESPC}}
+@STRING{MCNCA = {MCNCA}}
+@STRING{ASS = {ASS}}
+@STRING{Nature = {Nature}}
+@STRING{NatureNeuro = {Nature Neuroscience}}
+@STRING{PNAS = {PNAS}}
+@STRING{PLOSCB = {PLOSCB}}
+@STRING{NCNN = {Network: Computation in Neural Systems}}
+@STRING{JGT = {JGT}}
+@STRING{COGSCI = {COGSCI}}
+@STRING{HUMANOIDS = {HUMANOIDS}}
+@STRING{SPL = {SPL}}
+@STRING{SP = {SP}}
+@STRING{SPWORK = {SP Workshops}}
+@STRING{AISEC = {AISec}}
+@STRING{WIFS = {WIFS}}
+@STRING{ICMLA = {ICMLA}}
+@STRING{USENIX = {USENIX}}
+@STRING{USENIXWORK = {USENIX Workshops}}
+@STRING{ASIACCS = {AsiaCCS}}
+@STRING{DCC = {DCC}}
+@STRING{NEUROCOMPUTING = {Neurocomputing}}
+@STRING{EMNLP = {EMNLP}}
+% ---
+@STRING{CVPRREVIEW = {CVPR Review}}
+@STRING{NIPSREVIEW = {NIPS Review}}
+
+@article{Abadi2016ARXIVb,
+    author    = {Mart{\'{\i}}n Abadi and David G. Andersen},
+    title     = {Learning to Protect Communications with Adversarial Neural Cryptography},
+    journal   = ARXIV,
+    volume    = {abs/1610.06918},
+    year      = {2016},
+}
+
+@article{AbbasiARXIV2018,
+    author    = {Mahdieh Abbasi and Christian Gagn{\'{e}}},
+    title     = {Out-distribution training confers robustness to deep neural networks},
+    journal   = ARXIV,
+    volume    = {abs/1802.07124},
+    year      = {2018},
+}
+
+@book{Abramowitz1974,
+    author = {Milton Abramowitz},
+    title = {Handbook of Mathematical Functions, With Formulas, Graphs, and Mathematical Tables},
+    year = {1974},
+    publisher = {Dover Publications},
+}
+
+@inproceedings{AdrianACCV2012,
+    author    = {Victor Adrian Prisacariu and Aleksandr V. Segal and Ian D. Reid},
+    title     = {Simultaneous Monocular 2D Segmentation, 3D Pose Recovery and 3D Reconstruction},
+    booktitle = ACCV,
+    _pages     = {593--606},
+    year      = {2012},
+}
+
+@misc{Agarwal2012,
+    author = "Sameer Agarwal and Keir Mierle and Others",
+    title = "Ceres Solver",
+    howpublished = "\url{http://ceres-solver.org}",
+}
+
+@article{AkhtarARXIV2018,
+    author    = {Naveed Akhtar and Ajmal Mian},
+    title     = {Threat of Adversarial Attacks on Deep Learning in Computer Vision: A Survey},
+    journal   = ARXIV,
+    volume    = {abs/1801.00553},
+    year      = {2018},
+}
+
+@article{AkhtarARXIV2017,
+    author    = {Naveed Akhtar and Jian Liu and Ajmal S. Mian},
+    title     = {Defense against Universal Adversarial Perturbations},
+    journal   = ARXIV,
+    volume    = {abs/1711.05929},
+    year      = {2017},
+}
+
+@inproceedings{AlahiCVPR2016,
+    author    = {Alexandre Alahi and Kratarth Goel and Vignesh Ramanathan and Alexandre Robicquet and Fei{-}Fei Li and Silvio Savarese},
+    title     = {Social {LSTM:} Human Trajectory Prediction in Crowded Spaces},
+    booktitle = CVPR,
+    _pages     = {961--971},
+    year      = {2016},
+}
+
+@article{AlaifariARXIV2018,
+    author    = {Rima Alaifari and Giovanni S. Alberti and Tandri Gauksson},
+    title     = {ADef: an Iterative Algorithm to Construct Adversarial Deformations},
+    journal   = ARXIV,
+    volume    = {abs/1804.07729},
+    year      = {2018},
+}
+
+@inproceedings{AlzantotEMNLP2018,
+  author    = {Moustafa Alzantot and Yash Sharma and Ahmed Elgohary and Bo{-}Jhang Ho and Mani B. Srivastava and Kai{-}Wei Chang},
+  title     = {Generating Natural Language Adversarial Examples},
+  booktitle = EMNLP,
+  _pages     = {2890--2896},
+  year      = {2018},
+}
+
+@inproceedings{Amerini2017CVPRWORK,
+    author    = {Irene Amerini and Tiberio Uricchio and Lamberto Ballan and Roberto Caldelli},
+    title     = {Localization of {JPEG} Double Compression Through Multi-domain Convolutional Neural Networks},
+    booktitle = CVPRWORK,
+    _pages     = {1865--1871},
+    year      = {2017},
+}
+
+@article{AmodeiARXIV2016,
+    title={Concrete problems in AI safety},
+    author={Amodei, Dario and Olah, Chris and Steinhardt, Jacob and Christiano, Paul and Schulman, John and Man{\'e}, Dan},
+    journal=ARXIV,
+    volume={abs/1606.06565},
+    year={2016}
+}
+
+@inproceedings{AmsalegWIFS2017,
+    author    = {Laurent Amsaleg and James Bailey and Dominique Barbe and Sarah M. Erfani and Michael E. Houle and Vinh Nguyen and Milos Radovanovic},
+    title     = {The vulnerability of learning to adversarial perturbation increases
+    with intrinsic dimensionality},
+    booktitle = WIFS,
+    _pages     = {1--6},
+    year      = {2017},
+}
+
+@article{AndreasARXIV2015,
+    title={Deep compositional question answering with neural module networks. arXiv preprint},
+    author={Andreas, Jacob and Rohrbach, Marcus and Darrell, Trevor and Klein, Dan},
+    journal=ARXIV,
+    volume={abs/1511.02799},
+    year={2015}
+}
+
+@inproceedings{AntoniouICANN2018,
+    author    = {Antreas Antoniou and Amos J. Storkey and Harrison Edwards},
+    title     = {Augmenting Image Classifiers Using Data Augmentation Generative Adversarial Networks},
+    booktitle = ICANN,
+    _pages     = {594--603},
+    year      = {2018},
+}
+
+@article{AthalyeARXIV2018,
+    author    = {Anish Athalye and Nicholas Carlini and David A. Wagner},
+    title     = {Obfuscated Gradients Give a False Sense of Security: Circumventing Defenses to Adversarial Examples},
+    journal   = ARXIV,
+    volume    = {abs/1802.00420},
+    year      = {2018},
+}
+
+@article{AthalyeARXIV2018b,
+    author    = {Anish Athalye and Nicholas Carlini},
+    title     = {On the Robustness of the {CVPR} 2018 White-Box Adversarial Example Defenses},
+    journal   = ARXIV,
+    volume    = {abs/1804.03286},
+    year      = {2018},
+}
+
+@book{Barber2012,
+    author    = {David Barber},
+    title     = {Bayesian reasoning and machine learning},
+    publisher = {Cambridge University Press},
+    year      = {2012},
+}
+
+@inproceedings{BarrenoASIACCS2006,
+    author    = {Marco Barreno and Blaine Nelson and Russell Sears and Anthony D. Joseph and J. D. Tygar},
+    title     = {Can machine learning be secure?},
+    booktitle = ASIACCS,
+    _pages     = {16--25},
+    year      = {2006},
+}
+
+@article{BasriARXIV2016,
+    author    = {Ronen Basri and David W. Jacobs},
+    title     = {Efficient Representation of Low-Dimensional Manifolds using Deep Networks},
+    journal   = ARXIV,
+    volume    = {abs/1602.04723},
+    year      = {2016},
+}
+
+@article{BastaniARXIV2017,
+    title={Interpretability via Model Extraction},
+    author={Bastani, Osbert and Kim, Carolyn and Bastani, Hamsa},
+    journal=ARXIV,
+    volume={abs/1706.09773},
+    year={2017}
+}
+
+@inproceedings{BastaniNIPS2016,
+    title={Measuring neural net robustness with constraints},
+    author={Bastani, Osbert and Ioannou, Yani and Lampropoulos, Leonidas and Vytiniotis, Dimitrios and Nori, Aditya and Criminisi, Antonio},
+    booktitle=NIPS,
+    _pages={2613--2621},
+    year={2016}
+}
+
+@inproceedings{Berger2014EUROGRAPHICS,
+    author    = {Matthew Berger and Andrea Tagliasacchi and Lee M. Seversky and Pierre Alliez and Joshua A. Levine and Andrei Sharf and Cl{\'{a}}udio T. Silva},
+    title     = {State of the Art in Surface Reconstruction from Point Clouds},
+    booktitle = {Eurographics 2014 - State of the Art Reports, Strasbourg, France, April 7-11, 2014},
+    _pages     = {161--185},
+    year      = {2014},
+}
+
+@article{BhagojiARXIV2017,
+    title={Dimensionality Reduction as a Defense against Evasion Attacks on Machine Learning Classifiers},
+    author={Bhagoji, Arjun Nitin and Cullina, Daniel and Mittal, Prateek},
+    journal=ARXIV,
+    volume={abs/1704.02654},
+    year={2017}
+}
+
+@article{BhagojiARXIV2017b,
+    author    = {Arjun Nitin Bhagoji and Warren He and Bo Li and Dawn Song},
+    title     = {Exploring the Space of Black-box Attacks on Deep Neural Networks},
+    journal   = ARXIV,
+    volume    = {abs/1712.09491},
+    year      = {2017},
+}
+
+@article{BhattacharyyaARXIV2017,
+    author    = {Apratim Bhattacharyya and Mario Fritz and Bernt Schiele},
+    title     = {Long-Term On-Board Prediction of People in Traffic Scenes under Uncertainty},
+    journal   = ARXIV,
+    volume    = {abs/1711.09026},
+    year      = {2017},
+}
+
+@inproceedings{BiggioICML2012,
+    author    = {Battista Biggio and Blaine Nelson and avel Laskov},
+    title     = {Poisoning Attacks against Support Vector Machines},
+    booktitle = ICML,
+    year      = {2012},
+}
+
+@inproceedings{BiggioACML2011,
+    author    = {Battista Biggio and Blaine Nelson and Pavel Laskov},
+    title     = {Support Vector Machines Under Adversarial Label Noise},
+    booktitle = ACML,
+    _pages     = {97--112},
+    year      = {2011},
+}
+
+@article{BiggioARXIV2018,
+    title={Wild Patterns: Ten Years After the Rise of Adversarial Machine Learning},
+    author={Battista Biggio and Fabio Roli},
+    journal=ARXIV,
+    volume={abs/1712.03141},
+    year={2018}
+}
+
+@article{BiggioPR2018,
+    title={Wild Patterns: Ten Years After the Rise of Adversarial Machine Learning},
+    author={Battista Biggio and Fabio Roli},
+    journal=PR,
+    volume={84},
+    pages={317--331},
+    year={2018}
+}
+
+@article{TippingJRSS1999,
+  author = {M. E. Tipping and C. M. Bishop},
+  title = {Probabilistic Principal Component Analysis},
+  journal = JRSS,
+  year = {1999},
+  volume = {61},
+  pages = {611--622}
+}
+
+@article{Bondi2017SPL,
+    author    = {Luca Bondi and Luca Baroffio and David Guera and Paolo Bestagini and Edward J. Delp and Stefano Tubaro},
+    title     = {First Steps Toward Camera Model Identification With Convolutional
+    Neural Networks},
+    journal   = SPL,
+    volume    = {24},
+    number    = {3},
+    pages     = {259--263},
+    year      = {2017},
+}
+
+@inproceedings{Bondi2017CVPRWORK,
+    author    = {Luca Bondi and Silvia Lameri and David Guera and Paolo Bestagini and Edward J. Delp and Stefano Tubaro},
+    title     = {Tampering Detection and Localization Through Clustering of Camera-Based {CNN} Features},
+    booktitle = CVPRWORK,
+    _pages     = {1855--1864},
+    year      = {2017},
+}
+
+@article{Bottou2011ARXIV,
+    author    = {L{\'{e}}on Bottou},
+    title     = {From Machine Learning to Machine Reasoning},
+    journal   = ARXIV,
+    volume    = {abs/1102.1808},
+    year      = {2011},
+}
+
+@inproceedings{BousquetMLSS2003,
+    author    = {Olivier Bousquet and St{\'{e}}phane Boucheron and G{\'{a}}bor Lugosi},
+    title     = {Introduction to Statistical Learning Theory},
+    booktitle = {Advanced Lectures on Machine Learning, {ML} Summer Schools 2003, Canberra, Australia, February 2-14, 2003, T{\"{u}}bingen, Germany, August 4-16, 2003, Revised Lectures},
+    _pages     = {169--207},
+    year      = {2003},
+}
+
+
+@article{BrendelARXIV2017a,
+    author    = {Wieland Brendel and Matthias Bethge},
+    title     = {Comment on "Biologically inspired protection of deep networks from adversarial attacks"},
+    journal   = ARXIV,
+    volume    = {abs/1704.01547},
+    year      = {2017},
+}
+
+@article{BrendelARXIV2017b,
+    author    = {Wieland Brendel and Jonas Rauber and Matthias Bethge},
+    title     = {Decision-Based Adversarial Attacks: Reliable Attacks Against Black-Box
+    Machine Learning Models},
+    journal   = ARXIV,
+    volume    = {abs/1712.04248},
+    year      = {2017},
+}
+
+@article{BrownARXIV2017,
+    author    = {Tom B. Brown and Dandelion Man{\'{e}} and Aurko Roy and Mart{\'{\i}}n Abadi and	Justin Gilmer},
+    title     = {Adversarial Patch},
+    journal   = ARXIV,
+    volume    = {abs/1712.09665},
+    year      = {2017},
+}
+
+@article{BrownARXIV2018,
+    author    = {Tom B. Brown and Nicholas Carlini and Chiyuan Zhang and Catherine Olsson and Paul Christiano and Ian Goodfellow},
+    title     = {Unrestricted Adversarial Examples},
+    journal   = ARXIV,
+    volume    = {abs/1809.08352},
+    year      = {2017},
+}
+
+@article{BunelARXIV2017,
+    title={Piecewise Linear Neural Network verification: A comparative study},
+    author={Bunel, Rudy and Turkaslan, Ilker and Torr, Philip HS and Kohli, Pushmeet and Kumar, M Pawan},
+    journal=ARXIV,
+    volume={abs/1711.00455},
+    year={2017}
+}
+
+@inproceedings{BuckmanICLR2018,
+    title={Thermometer Encoding: One Hot Way To Resist Adversarial Examples},
+    author={Jacob Buckman and Aurko Roy and Colin Raffel and Ian Goodfellow},
+    booktitle=ICLR,
+    year={2018},
+}
+
+@article{CarliniARXIV2017,
+    title={Adversarial Examples Are Not Easily Detected: Bypassing Ten Detection Methods},
+    author={Nicholas Carlini and David Wagner},
+    journal=ARXIV,
+    volume={abs/1705.07263},
+    year={2017}
+}
+
+@inproceedings{CarliniAISec2017,
+    title={Adversarial examples are not easily detected: Bypassing ten detection methods},
+    author={Nicholas Carlini and David Wagner},
+    booktitle=AISEC,
+    _pages={3--14},
+    year={2017},
+}
+
+@inproceedings{CarliniSP2017,
+    title={Towards evaluating the robustness of neural networks},
+    author={Nicholas Carlini and David Wagner},
+    booktitle=SP,
+    _pages={39--57},
+    year={2017},
+    _organization={IEEE}
+}
+
+@article{CarliniARXIV2016,
+    author    = {Nicholas Carlini and David A. Wagner},
+    title     = {Defensive Distillation is Not Robust to Adversarial Examples},
+    journal   = ARXIV,
+    volume    = {abs/1607.04311},
+    year      = {2016},
+}
+
+@inproceedings{CarliniWP2018,
+  author    = {Nicholas Carlini and David A. Wagner},
+  title     = {Audio Adversarial Examples: Targeted Attacks on Speech-to-Text},
+  booktitle = SP,
+  _pages     = {1--7},
+  year      = {2018},
+}
+
+@inproceedings{ChaoCVPR2017,
+    author    = {Yu{-}Wei Chao and Jimei Yang and Brian L. Price and Scott Cohen and Jia Deng},
+    title     = {Forecasting Human Dynamics from Static Images},
+    booktitle = CVPR,
+    _pages     = {3643--3651},
+    year      = {2017},
+}
+
+@article{Chen2016ARXIVb,
+    author    = {Xiaozhi Chen and Huimin Ma and Ji Wan and Bo Li and Tian Xia},
+    title     = {Multi-View 3D Object Detection Network for Autonomous Driving},
+    journal   = ARXIV,
+    volume    = {abs/1611.07759},
+    year      = {2016},
+}
+
+@inproceedings{ChenAISEC2017,
+    title={{ZOO}: Zeroth order optimization based black-box attacks to deep neural networks without training substitute models},
+    author={Chen, Pin-Yu and Zhang, Huan and Sharma, Yash and Yi, Jinfeng and Hsieh, Cho-Jui},
+    booktitle=AISEC,
+    _pages={15--26},
+    year={2017},
+}
+
+@article{ChenARXIV2017,
+    author    = {Hongge Chen and Huan Zhang and Pin{-}Yu Chen and Jinfeng Yi and Cho{-}Jui Hsieh},
+    title     = {Show-and-Fool: Crafting Adversarial Examples for Neural Image Captioning},
+    journal   = ARXIV,
+    volume    = {abs/1712.02051},
+    year      = {2017},
+}
+
+@inproceedings{CignoniEICC2008,
+    author = {Paolo Cignoni and Marco Callieri and Massimiliano Corsini and Matteo Dellepiane and Fabio Ganovelli and Guido Ranzuglia},
+    title = {MeshLab: an Open-Source Mesh Processing Tool},
+    booktitle = EICC,
+    _pages = {129--136},
+    year = {2008},
+}
+
+@inproceedings{CisseNIPS2017,
+    title={Houdini: Fooling Deep Structured Visual and Speech Recognition Models with Adversarial Examples},
+    author={Cisse, Moustapha M and Adi, Yossi and Neverova, Natalia and Keshet, Joseph},
+    booktitle=NIPS,
+    _pages={6980--6990},
+    year={2017}
+}
+
+@inproceedings{CisseICML2017,
+    author    = {Moustapha Ciss{\'{e}} and Piotr Bojanowski and Edouard Grave and Yann Dauphin and Nicolas Usunier},
+    title     = {Parseval Networks: Improving Robustness to Adversarial Examples},
+    booktitle = ICML,
+    _pages     = {854--863},
+    year      = {2017},
+}
+
+@article{CohenARXIV2017,
+    author    = {Gregory Cohen and Saeed Afshar and Jonathan Tapson and Andr{\'{e}} van Schaik},
+    title     = {{EMNIST:} an extension of {MNIST} to handwritten letters},
+    journal   = ARXIV,
+    volume    = {abs/1702.05373},
+    year      = {2017},
+}
+
+@inproceedings{Collobert2011,
+    title = {Torch7: A Matlab-like Environment for Machine Learning},
+    author = {Ronan Collobert and Koray Kavukcuoglu and Cl{\'e}ment Farabet},
+    booktitle = {BigLearn, NIPS Workshop},
+    year = {2011}
+}
+
+@article{CubukARXIV2018,
+    author    = {Ekin Dogus Cubuk and Barret Zoph and Dandelion Man{\'{e}} and Vijay Vasudevan and Quoc V. Le},
+    title     = {AutoAugment: Learning Augmentation Policies from Data},
+    journal   = ARXIV,
+    volume    = {abs/1805.09501},
+    year      = {2018},
+}
+
+@article{Dai2016ARXIV,
+    author    = {Angela Dai and Charles Ruizhongtai Qi and Matthias Nie{\ss}ner},
+    title     = {Shape Completion using 3D-Encoder-Predictor CNNs and Shape Synthesis},
+    journal   = ARXIV,
+    volume    = {abs/1612.00101},
+    year      = {2016},
+}
+
+@inproceedings{Dai2017CVPRb,
+    author    = {Angela Dai and Angel X. Chang and Manolis Savva and Maciej Halber and Thomas A. Funkhouser and Matthias Nie{\ss}ner},
+    title     = {ScanNet: Richly-Annotated 3D Reconstructions of Indoor Scenes},
+    booktitle = CVPR,
+    _pages     = {2432--2443},
+    year      = {2017}
+}
+
+@misc{DarvishOPENREVIEW2018,
+    title={Towards Safe Deep Learning: Unsupervised Defense Against Generic Adversarial Attacks},
+    author={Bita Darvish Rouhani and Mohammad Samragh and Tara Javidi and Farinaz Koushanfar},
+    year={2018},
+    url={https://openreview.net/forum?id=HyI6s40a-},
+}
+
+@article{DongARXIV2017,
+    author    = {Yinpeng Dong and Fangzhou Liao and Tianyu Pang and Xiaolin Hu and Jun Zhu},
+    title = {Boosting Adversarial Attacks with Momentum},
+    _title     = {Discovering Adversarial Examples with Momentum},
+    journal   = ARXIV,
+    volume    = {abs/1710.06081},
+    year      = {2017},
+}
+
+@inproceedings{DongCVPR2018,
+    author = {Dong, Yinpeng and Liao, Fangzhou and Pang, Tianyu and Su, Hang and Zhu, Jun and Hu, Xiaolin and Li, Jianguo},
+    title = {Boosting Adversarial Attacks With Momentum},
+    booktitle = CVPR,
+    _month = {June},
+    year = {2018}
+}
+
+@inproceedings{DosovitskiyCORL2017,
+    author    = {Alexey Dosovitskiy and Germ{\'{a}}n Ros and Felipe Codevilla and Antonio L{\'{o}}pez and  Vladlen Koltun},
+    title     = {{CARLA:} An Open Urban Driving Simulator},
+    booktitle = CORL,
+    _pages     = {1--16},
+    year      = {2017},
+}
+
+@article{DruckerNN1992,
+    author    = {Harris Drucker and Yann LeCun},
+    title     = {Improving generalization performance using double backpropagation},
+    journal   = NN,
+    volume    = {3},
+    number    = {6},
+    pages     = {991--997},
+    year      = {1992},
+}
+
+@article{DumontARXIV2018,
+    author    = {Beranger Dumont and Simona Maggio and Pablo Montalvo},
+    title     = {Robustness of Rotation-Equivariant Networks to Adversarial Perturbations},
+    journal   = {CoRR},
+    volume    = {abs/1802.06627},
+    year      = {2018},
+}
+
+@Article{Ekman2017NATURE,
+    author={Ekman, Matthias and Kok, Peter and de Lange, Floris P.},
+    title={Time-compressed preplay of anticipated events in human primary visual cortex},
+    journal=NATURE,
+    year={2017},
+    month={May},
+    day={23},
+    volume={8},
+}
+
+@article{ElsayedARXIV2018,
+    author    = {Gamaleldin F. Elsayed and Ian Goodfellow and Jascha Sohl-Dickstein},
+    title     = {Adversarial Reprogramming of Neural Networks},
+    journal   = ARXIV,
+    volume    = {abs/1806.11146},
+    year      = {2018},
+}
+
+@inproceedings{Engelmann2017WACV,
+    author    = {Francis Engelmann and J{\"{o}}rg St{\"{u}}ckler and Bastian Leibe},
+    title     = {{SAMP:} Shape and Motion Priors for 4D Vehicle Reconstruction},
+    booktitle = WACV,
+    _pages     = {400--408},
+    year      = {2017},
+}
+
+@article{EngstromARXIV2017,
+    title={A Rotation and a Translation Suffice: Fooling {CNNs} with Simple Transformations},
+    author={Engstrom, Logan and Tsipras, Dimitris and Schmidt, Ludwig and Madry, Aleksander},
+    journal=ARXIV,
+    volume={abs/1712.02779},
+    year={2017}
+}
+
+@article{Fan2016ARXIV,
+    author    = {Haoqiang Fan and Hao Su and Leonidas J. Guibas},
+    title     = {A Point Set Generation Network for 3D Object Reconstruction from a Single Image},
+    journal   = ARXIV,
+    volume    = {abs/1612.00603},
+    year      = {2016},
+}
+
+@inproceedings{FawziICMLWORK2015,
+    title={Fundamental limits on adversarial robustness},
+    author={Fawzi, Alhussein and Fawzi, Omar and Frossard, Pascal},
+    booktitle=ICMLWORK,
+    year={2015}
+}
+
+@inproceedings{FawziNIPS2016,
+    title={Robustness of classifiers: from adversarial to random noise},
+    author={Fawzi, Alhussein and Moosavi-Dezfooli, Seyed-Mohsen and Frossard, Pascal},
+    booktitle=NIPS,
+    _pages={1632--1640},
+    year={2016}
+}
+
+@inproceedings{FawziICIP2016,
+    author    = {Alhussein Fawzi and Horst Samulowitz and Deepak S. Turaga and Pascal Frossard},
+    title     = {Adaptive data augmentation for image classification},
+    booktitle = ICIP,
+    _pages     = {3688--3692},
+    year      = {2016},
+}
+
+@article{FeinmanARXIV2017,
+    title={Detecting Adversarial Samples from Artifacts},
+    author={Feinman, Reuben and Curtin, Ryan R and Shintre, Saurabh and Gardner, Andrew B},
+    journal=ARXIV,
+    volume={abs/1703.00410},
+    year={2017}
+}
+
+@inproceedings{FinnNIPS2016,
+    author    = {Chelsea Finn and Ian J. Goodfellow and Sergey Levine},
+    title     = {Unsupervised Learning for Physical Interaction through Video Prediction},
+    booktitle = NIPS,
+    _pages     = {64--72},
+    year      = {2016},
+}
+
+@article{FischerARXIV2017,
+    title={Adversarial Examples for Semantic Image Segmentation},
+    author={Fischer, Volker and Kumar, Mummadi Chaithanya and Metzen, Jan Hendrik and Brox, Thomas},
+    journal=ARXIV,
+    volume={abs/1703.01101},
+    year={2017}
+}
+
+@article{FischerICLR2017,
+    title={Adversarial Examples for Semantic Image Segmentation},
+    author={Fischer, Volker and Kumar, Mummadi Chaithanya and Metzen, Jan Hendrik and Brox, Thomas},
+    journal=ICLR,
+    year={2017}
+}
+
+@article{GallowayARXIV2018,
+    author    = {Angus Galloway and Thomas Tanay and Graham W. Taylor},
+    title     = {Adversarial Training Versus Weight Decay},
+    journal   = ARXIV,
+    volume    = {abs/1804.03308},
+    year      = {2018},
+}
+
+@article{GaoARXIV2017,
+    author    = {Ruohan Gao and Bo Xiong and Kristen Grauman},
+    title     = {Im2Flow: Motion Hallucination from Static Images for Action Recognition},
+    journal   = ARXIV,
+    volume    = {abs/1712.04109},
+    year      = {2017},
+}
+
+@inproceedings{GarciaGarcia2016IJCNN,
+    author    = {Alberto Garcia{-}Garcia and Francisco Gomez{-}Donoso and Jos{\'{e}} Garc{\'{\i}}a Rodr{\'{\i}}guez and Sergio Orts{-}Escolano and Miguel Cazorla and Jorge Azor{\'{\i}}n L{\'{o}}pez},
+    title     = {PointNet: {A} 3D Convolutional Neural Network for real-time object class recognition},
+    booktitle = IJCNN,
+    _pages     = {1578--1584},
+    year      = {2016},
+}
+
+@inproceedings{Gersham2014COGSCI,
+    author    = {Samuel Gershman and Noah D. Goodman},
+    title     = {Amortized Inference in Probabilistic Reasoning},
+    booktitle = COGSCI,
+    year      = {2014},
+}
+
+@article{GhorbaniARXVI2017,
+    author    = {Amirata Ghorbani and Abubakar Abid and James Y. Zou},
+    title     = {Interpretation of Neural Networks is Fragile},
+    journal   = ARXIV,
+    volume    = {abs/1710.10547},
+    year      = {2017},
+}
+
+@article{GilmerARXIV2018,
+    title={Adversarial Spheres},
+    author={Justin Gilmer and Luke Metz and Fartash Faghri and Samuel S. Schoenholz and Maithra Raghu and Martin Wattenberg and Ian Goodfellow},
+    journal=ARXIV,
+    volume={abs/1801.02774},
+    year={2018}
+}
+
+@article{GilmerICLRWORK2018,
+    title={Adversarial Spheres},
+    author={Justin Gilmer and Luke Metz and Fartash Faghri and Samuel S. Schoenholz and Maithra Raghu and Martin Wattenberg and Ian Goodfellow},
+    journal=ICLRWORK,
+    year={2018}
+}
+
+@article{GilmerARXIV2018b,
+    title={Motivating the Rules of the Game for Adversarial Example Research},
+    author={Justin Gilmer and Ryan P. Adams and Ian Goodfellow and David Andersen and George E. Dahl},
+    journal=ARXIV,
+    volume={abs/1807.06732},
+    year={2018}
+}
+
+@inproceedings{GlorotAISTATS2010,
+    title = {Understanding the difficulty of training deep feedforward neural networks},
+    author = {Xavier Glorot and Yoshua Bengio},
+    booktitle = AISTATS,
+    year = {2010}
+}
+
+@article{GoodfellowARXIV2014,
+    title={Explaining and harnessing adversarial examples},
+    author={Goodfellow, Ian J and Shlens, Jonathon and Szegedy, Christian},
+    journal=ARXIV,
+    volume={abs/1412.6572},
+    year={2014}
+}
+
+@inproceedings{GoodfellowNIPS2014,
+  author    = {Ian J. Goodfellow and Jean Pouget{-}Abadie and Mehdi Mirza and Bing Xu and David Warde{-}Farley and Sherjil Ozair and Aaron C. Courville and Yoshua Bengio},
+  title     = {Generative Adversarial Nets},
+  booktitle = NIPS,
+  year      = {2014},
+  file      = {Goodfellow2014NIPS.pdf:Goodfellow2014NIPS.pdf:PDF},
+  groups    = {AlHaija2017ICCV},
+}
+
+@article{GoodfellowACM2018,
+    author = {Goodfellow, Ian and McDaniel, Patrick and Papernot, Nicolas},
+    title = {Making Machine Learning Robust Against Adversarial Inputs},
+    journal = ACM,
+    volume = {61},
+    number = {7},
+    year = {2018},
+    issn = {0001-0782},
+    pages = {56--66},
+    publisher = {ACM},
+    address = {New York, NY, USA},
+} 
+
+@article{GraveARXIV2016,
+    title={Improving neural language models with a continuous cache},
+    author={Grave, Edouard and Joulin, Armand and Usunier, Nicolas},
+    journal=ARXIV,
+    volume={abs/1612.04426},
+    year={2016}
+}
+
+@article{GrosseARXIV2017,
+    title={On the (statistical) detection of adversarial examples},
+    author={Grosse, Kathrin and Manoharan, Praveen and Papernot, Nicolas and Backes, Michael and McDaniel, Patrick},
+    journal=ARXIV,
+    volume={abs/1702.06280},
+    year={2017}
+}
+
+@article{GuoARXIV2017,
+    author    = {Chuan Guo and Mayank Rana and Moustapha Ciss{\'{e}} and Laurens van der Maaten},
+    title     = {Countering Adversarial Images using Input Transformations},
+    journal   = ARXIV,
+    volume    = {abs/1711.00117},
+    year      = {2017},
+}
+
+@inproceedings{GuoICML2017,
+    author    = {Chuan Guo and Geoff Pleiss and Yu Sun and Kilian Q. Weinberger},
+    title     = {On Calibration of Modern Neural Networks},
+    booktitle = ICML,
+    year      = {2017},
+}
+
+@inproceedings{HanICCV2017,
+    author    = {Xiaoguang Han and Zhen Li and Haibin Huang and Evangelos Kalogerakis and Yizhou Yu},
+    title     = {High-Resolution Shape Completion Using Deep Neural Networks for Global
+    Structure and Local Geometry Inference},
+    booktitle = ICCV,
+    _pages     = {85--93},
+    year      = {2017},
+}
+
+@article{HeARXIV2017,
+    title={Adversarial Example Defenses: Ensembles of Weak Defenses are not Strong},
+    author={He, Warren and Wei, James and Chen, Xinyun and Carlini, Nicholas and Song, Dawn},
+    journal=ARXIV,
+    volume={abs/1706.04701},
+    year={2017}
+}
+
+@inproceedings{HeUSENIXWORK2017,
+    author = {Warren He and James Wei and Xinyun Chen and Nicholas Carlini and Dawn Song},
+    title = {Adversarial Example Defense: Ensembles of Weak Defenses are not Strong},
+    booktitle = USENIXWORK,
+    year = {2017},
+}
+
+@inproceedings{HeCVPR2016,
+  author    = {Kaiming He and Xiangyu Zhang and Shaoqing Ren and Jian Sun},
+  title     = {Deep Residual Learning for Image Recognition},
+  booktitle = CVPR,
+  _pages     = {770--778},
+  year      = {2016},
+}
+
+@article{HeinARXIV2017,
+    title={Formal Guarantees on the Robustness of a Classifier against Adversarial Manipulation},
+    author={Hein, Matthias and Andriushchenko, Maksym},
+    journal=ARXIV,
+    volume={abs/1705.08475},
+    year={2017}
+}
+
+@inproceedings{HeinNIPS2017,
+    author = {Matthias Hein and Maksym Andriushchenko},
+    title = {Formal Guarantees on the Robustness of a Classifier against Adversarial Manipulation},
+    booktitle = NIPS,
+    _pages = {2263--2273},
+    year = {2017},
+}
+
+@article{HuARXIV2017,
+    title={Learning to reason: End-to-end module networks for visual question answering},
+    author={Hu, Ronghang and Andreas, Jacob and Rohrbach, Marcus and Darrell, Trevor and Saenko, Kate},
+    journal=ARXIV,
+    volume={abs/1704.05526},
+    year={2017}
+}
+
+@article{HuangARXIV2015,
+    title={Learning with a strong adversary},
+    author={Huang, Ruitong and Xu, Bing and Schuurmans, Dale and Szepesv{\'a}ri, Csaba},
+    journal=ARXIV,
+    volume={abs/1511.03034},
+    year={2015}
+}
+
+@inproceedings{Huang2017CUV,
+    author    = {Xiaowei Huang and Marta Kwiatkowska and Sen Wang and Min Wu},
+    title     = {Safety Verification of Deep Neural Networks},
+    booktitle = CUV,
+    _pages     = {3--29},
+    year      = {2017},
+}
+
+@article{HuangARXIV2017,
+    author    = {Sandy H. Huang and Nicolas Papernot and Ian J. Goodfellow and Yan Duan and Pieter Abbeel},
+    title     = {Adversarial Attacks on Neural Network Policies},
+    journal   = ARXIV,
+    volume    = {abs/1702.02284},
+    year      = {2017},
+}
+
+@article{HuangICLR2017,
+    author    = {Sandy H. Huang and Nicolas Papernot and Ian J. Goodfellow and Yan Duan and Pieter Abbeel},
+    title     = {Adversarial Attacks on Neural Network Policies},
+    journal   = ICLR,
+    year      = {2017},
+}
+
+@article{IlyasARXIV2017,
+    author    = {Andrew Ilyas and Ajil Jalal and Eirini Asteri and Constantinos Daskalakis and Alexandros G. Dimakis},
+    title     = {The Robust Manifold Defense: Adversarial Training using Generative Models},
+    journal   = ARXIV,
+    volume    = {abs/1712.09196},
+    year = {2017},
+}
+
+@article{IlyasARXIV2018,
+    author    = {Andrew Ilyas and Logan Engstrom and Aleksander Madry},
+    title     = {Prior Convictions: Black-Box Adversarial Attacks with Bandits and Priors},
+    journal   = ARXIV,
+    volume    = {abs/1807.07978},
+    year = {2018},
+}
+
+@inproceedings{IlyasICML2018,
+  author    = {Andrew Ilyas and Logan Engstrom and Anish Athalye and Jessy Lin},
+  title     = {Black-box Adversarial Attacks with Limited Queries and Information},
+  booktitle = ICML,
+  _pages     = {2142--2151},
+  year      = {2018},
+}
+
+@inproceedings{ImAAAI2017,
+    author    = {Daniel Jiwoong Im and Sungjin Ahn and Roland Memisevic and Yoshua Bengio},
+    title     = {Denoising Criterion for Variational Auto-Encoding Framework},
+    booktitle = AAAI,
+    _pages     = {2059--2065},
+    year      = {2017},
+}
+
+@inproceedings{IoffeICML2015,
+    title = {Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift},
+    author = {Sergey Ioffe and Christian Szegedy},
+    booktitle = ICML,
+    year = {2015}
+}
+
+@inproceedings{JaderbergNIPS2015,
+    author    = {Max Jaderberg and Karen Simonyan and Andrew Zisserman and Koray Kavukcuoglu},
+    title     = {Spatial Transformer Networks},
+    booktitle = NIPS,
+    _pages     = {2017--2025},
+    year      = {2015},
+}
+
+@inproceedings{JainICCV2015,
+    author    = {Ashesh Jain and Hema Swetha Koppula and Bharad Raghavan and Shane Soh and Ashutosh Saxena},
+    title     = {Car that Knows Before You Do: Anticipating Maneuvers via Learning
+    Temporal Driving Models},
+    booktitle = ICCV,
+    _pages     = {3182--3190},
+    year      = {2015},
+}
+
+@inproceedings{JainICRA2016,
+    author    = {Ashesh Jain and Avi Singh and Hema Swetha Koppula and Shane Soh and Ashutosh Saxena},
+    title     = {Recurrent Neural Networks for driver activity anticipation via sensory-fusion
+    architecture},
+    booktitle = ICRA,
+    _pages     = {3118--3125},
+    year      = {2016},
+}
+
+@article{JakubovitzARXIV2018,
+    title={Improving {DNN} Robustness to Adversarial Attacks using Jacobian Regularization},
+    author={Daniel Jakubovitz and Raja Giryes},
+    journal=ARXIV,
+    volume={abs/1803.08680},
+    year={2018}
+}
+
+@article{JangARXIV2016,
+    author = {Eric Jang and Shixiang Gu and Ben Poole},
+    title = {Categorical Reparameterization with Gumbel-Softmax},
+    journal = ARXIV,
+    volume = {abs/1611.01144},
+    year = {2016},
+}
+
+@inproceedings{JiwoongAAAI2017,
+    author = {Daniel Jiwoong Im and Sungjin Ahn and Roland Memisevic and Yoshua Bengio},
+    title = {Denoising Criterion for Variational Auto-Encoding Framework},
+    booktitle = AAAI,
+    _pages = {2059--2065},
+    year = {2017},
+}
+
+@article{JohnsonARXIV2017,
+    title={Inferring and Executing Programs for Visual Reasoning},
+    author={Johnson, Justin and Hariharan, Bharath and van der Maaten, Laurens and Hoffman, Judy and Fei-Fei, Li and Zitnick, C Lawrence and Girshick, Ross},
+    journal=ARXIV,
+    volume={abs/1705.03633},
+    year={2017}
+}
+
+@article{JuutiARXIV2018,
+    title = {{PRADA}: Protecting against {DNN} Model Stealing Attacks},
+    author = {Mika Juuti and Sebastian Szyller and Alexey Dmitrenko and Samuel Marchal and N. Asokan},
+    journal = ARXIV,
+    volume={abs/1805.02628},
+    year = {2018}
+}
+
+@article{KanbakARXIV2017,
+    author    = {Can Kanbak and Seyed{-}Mohsen Moosavi{-}Dezfooli and Pascal Frossard},
+    title     = {Geometric robustness of deep networks: analysis and improvement},
+    journal   = ARXIV,
+    volume    = {abs/1711.09115},
+    year      = {2017},
+}
+
+@article{KannanARXIV2018,
+    author    = {Harini Kannan and Alexey Kurakin and Ian J. Goodfellow},
+    title     = {Adversarial Logit Pairing},
+    journal   = ARXIV,
+    volume    = {abs/1803.06373},
+    year      = {2018},
+}
+
+@inproceedings{KimCVPR2017,
+    author    = {Jongyoo Kim and Sanghoon Lee},
+    title     = {Deep Learning of Human Visual Sensitivity in Image Quality Assessment Framework},
+    booktitle = CVPR,
+    _pages     = {1969--1977},
+    year      = {2017},
+}
+
+@article{KingmaARXIV2013,
+    author = {Diederik P. Kingma and Max Welling},
+    title = {Auto-Encoding Variational Bayes},
+    journal = ARXIV,
+    volume = {abs/1312.6114},
+    year = {2013},
+    url = {http://arxiv.org/abs/1312.6114},
+}
+
+@inproceedings{KingmaICLR2014,
+    author = {Diederik P. Kingma and Max Welling},
+    title = {Auto-Encoding Variational Bayes},
+    booktitle = ICLR,
+    year = {2014}
+}
+
+@article{KingmaARXIV2014,
+    author    = {Diederik P. Kingma and Jimmy Ba},
+    title     = {Adam: {A} Method for Stochastic Optimization},
+    journal   = ARXIV,
+    volume    = {abs/1412.6980},
+    year      = {2014},
+}
+
+@inproceedings{KingmaICLR2015,
+    author = {Diederik P. Kingma and Jimmy Ba},
+    title = {Adam: {A} Method for Stochastic Optimization},
+    booktitle = ICLR,
+    year = {2015}
+}
+
+@article{KhouryARXIV2018,
+    author    = {Marc Khoury and Dylan Hadfield{-}Menell},
+    title     = {On the Geometry of Adversarial Examples},
+    journal   = ARXIV,
+    volume    = {abs/1811.00525},
+    year      = {2018},
+}
+
+@article{KosARXIV2017,
+    author    = {Jernej Kos and Ian Fischer and Dawn Song},
+    title     = {Adversarial examples for generative models},
+    journal   = ARXIV,
+    volume    = {abs/1702.06832},
+    year      = {2017},
+}
+
+@inproceedings{KosSPWORK2018,
+  author    = {Jernej Kos and Ian Fischer and Dawn Song},
+  title     = {Adversarial Examples for Generative Models},
+  booktitle = SPWORK,
+  _pages     = {36--42},
+  year      = {2018},
+}
+
+@inproceedings{KroemerHUMANOIDS2012,
+    author    = {Oliver Kroemer and Heni Ben Amor and Marco Ewerton and Jan Peters},
+    title     = {Point cloud completion using extrusions},
+    booktitle = HUMANOIDS,
+    _pages     = {680--685},
+    year      = {2012},
+}
+
+@inproceedings{KumarICML2016,
+    title={Ask me anything: Dynamic memory networks for natural language processing},
+    author={Kumar, Ankit and Irsoy, Ozan and Ondruska, Peter and Iyyer, Mohit and Bradbury, James and Gulrajani, Ishaan and Zhong, Victor and Paulus, Romain and Socher, Richard},
+    booktitle=ICML,
+    _pages={1378--1387},
+    year={2016}
+}
+
+@article{KurachARXIV2015,
+    title={Neural random-access machines},
+    author={Kurach, Karol and Andrychowicz, Marcin and Sutskever, Ilya},
+    journal=ARXIV,
+    volume={abs/1511.06392},
+    year={2015}
+}
+
+@article{KurakinARXIV2016,
+    title={Adversarial machine learning at scale},
+    author={Kurakin, Alexey and Goodfellow, Ian and Bengio, Samy},
+    journal=ARXIV,
+    volume={abs/1611.01236},
+    year={2016}
+}
+
+@article{KurakinARXIV2016b,
+    title={Adversarial examples in the physical world},
+    author={Kurakin, Alexey and Goodfellow, Ian and Bengio, Samy},
+    journal=ARXIV,
+    volume={abs/1607.02533},
+    year={2016}
+}
+
+@article{Lake2016ARXIV,
+    author    = {Brenden M. Lake and Tomer D. Ullman and Joshua B. Tenenbaum and Samuel J. Gershman},
+    title     = {Building Machines That Learn and Think Like People},
+    journal   = ARXIV,
+    volume    = {abs/1604.00289},
+    year      = {2016},
+}
+
+@article{LambARXIV2018,
+    author    = {Alex Lamb and Jonathan Binas and Anirudh Goyal and Dmitriy Serdyuk and Sandeep Subramanian and Ioannis Mitliagkas and Yoshua Bengio},
+    title     = {Fortified Networks: Improving the Robustness of Deep Networks by Modeling the Manifold of Hidden Representations},
+    journal   = ARXIV,
+    volume    = {abs/1804.02485},
+    year      = {2018},
+}
+
+@inproceedings{LanECCV2014,
+    author    = {Tian Lan and Tsung{-}Chuan Chen and Silvio Savarese},
+    title     = {A Hierarchical Representation for Future Action Prediction},
+    booktitle = ECCV,
+    _pages     = {689--704},
+    year      = {2014},
+}
+
+@inproceedings{LaparraHVEI2016,
+    author    = {Valero Laparra and Johannes Ball{\'{e}} and Alexander Berardino and Eero P. Simoncelli},
+    title     = {Perceptual image quality assessment using a normalized Laplacian pyramid},
+    booktitle = HVEI,
+    _pages     = {1--6},
+    year      = {2016},
+}
+
+@inproceedings{LarsenICML2016,
+    author    = {Anders Boesen Lindbo Larsen and S{\o}ren Kaae S{\o}nderby and Hugo Larochelle and Ole Winther},
+    title     = {Autoencoding beyond pixels using a learned similarity metric},
+    booktitle = ICML,
+    _pages     = {1558--1566},
+    year      = {2016},
+}
+
+@article{Larsson2017ARXIV,
+    author    = {Gustav Larsson and Michael Maire and Gregory Shakhnarovich},
+    title     = {Colorization as a Proxy Task for Visual Understanding},
+    journal   = ARXIV,
+    volume    = {abs/1703.04044},
+    year      = {2017},
+}
+
+@article{LawCVIU2011,
+    author    = {Alvin J. Law and Daniel G. Aliaga},
+    title     = {Single viewpoint model completion of symmetric objects for digital inspection},
+    journal   = CVIU,
+    volume    = {115},
+    number    = {5},
+    pages     = {603--610},
+    year      = {2011},
+}
+
+@article{LecunIEEE1998,
+  title={Gradient-based learning applied to document recognition},
+  author={LeCun, Yann and Bottou, L{\'e}on and Bengio, Yoshua and Haffner, Patrick},
+  journal={Proceedings of the IEEE},
+  volume={86},
+  number={11},
+  pages={2278--2324},
+  year={1998},
+  publisher={IEEE}
+}
+
+
+@inproceedings{LeottaCVPR2009,
+    author    = {Matthew J. Leotta and Joseph L. Mundy},
+    title     = {Predicting high resolution image edges with a generic, adaptive, 3-D vehicle model},
+    booktitle = CVPR,
+    _pages     = {1311--1318},
+    year      = {2009},
+}
+
+@inproceedings{LeeWACV2016,
+    author    = {Namhoon Lee and Kris M. Kitani},
+    title     = {Predicting wide receiver trajectories in American football},
+    booktitle = WACV,
+    _pages     = {1--9},
+    year      = {2016},
+}
+
+@article{Lee2017ARXIV,
+    author    = {Namhoon Lee and Wongun Choi and Paul Vernaza and Christopher Bongsoo Choy and Philip H. S. Torr and Manmohan Krishna Chandraker},
+    title     = {{DESIRE:} Distant Future Prediction in Dynamic Scenes with Interacting Agents},
+    journal   = ARXIV,
+    volume    = {abs/1704.04394},
+    year      = {2017},
+}
+
+@article{LeeARXIV2017b,
+    author    = {Hyeungill Lee and Sungyeob Han and Jungwoo Lee},
+    title     = {Generative Adversarial Trainer: Defense to Adversarial Perturbations
+    with {GAN}},
+    journal   = ARXIV,
+    volume    = {abs/1705.03387},
+    year      = {2017},
+}
+
+@article{LiCGF2015,
+    author    = {Yangyan Li and Angela Dai and Leonidas J. Guibas and Matthias Nie{\ss}ner},
+    title     = {Database-Assisted Object Retrieval for Real-Time 3D Reconstruction},
+    journal   = CGF,
+    volume    = {34},
+    number    = {2},
+    pages     = {435--446},
+    year      = {2015},
+}
+
+@inproceedings{LiangICCV2017,
+    author    = {Xiaodan Liang and Lisa Lee and Wei Dai and Eric P. Xing},
+    title     = {Dual Motion {GAN} for Future-Flow Embedded Video Prediction},
+    booktitle = ICCV,
+    _pages     = {1762--1770},
+    year      = {2017},
+}
+
+@article{LiaoARXIV2017,
+  author    = {Fangzhou Liao and Ming Liang and Yinpeng Dong and Tianyu Pang and Jun Zhu and Xiaolin Hu},
+  title     = {Defense against Adversarial Attacks Using High-Level Representation Guided Denoiser},
+  journal   = {CoRR},
+  volume    = {abs/1712.02976},
+  year      = {2017},
+}
+
+@InProceedings{LiaoCVPR2018,
+    author = {Liao, Fangzhou and Liang, Ming and Dong, Yinpeng and Pang, Tianyu and Hu, Xiaolin and Zhu, Jun},
+    title = {Defense Against Adversarial Attacks Using High-Level Representation Guided Denoiser},
+    booktitle = CVPR,
+    _month = {June},
+    year = {2018}
+} 
+
+@article{LiptonARXIV2016,
+    title={The mythos of model interpretability},
+    author={Lipton, Zachary C},
+    journal=ARXIV,
+    volume={abs/1606.03490},
+    year={2016}
+}
+
+@inproceedings{LinIJCAI2017,
+    author    = {Yen{-}Chen Lin and Zhang{-}Wei Hong and Yuan{-}Hong Liao and Meng{-}Li Shih and Ming{-}Yu Liu and Min Sun},
+    title     = {Tactics of Adversarial Attack on Deep Reinforcement Learning Agents},
+    booktitle = IJCAI,
+    _pages     = {3756--3762},
+    year      = {2017},
+}
+
+@article{LiuARXIV2017,
+    title={Towards Robust Neural Networks via Random Self-ensemble},
+    author={Liu, Xuanqing and Cheng, Minhao and Zhang, Huan and Hsieh, Cho-Jui},
+    journal=ARXIV,
+    volume={abs/1712.00673},
+    year={2017}
+}
+
+@article{LiuARXIV2016,
+    title={Delving into transferable adversarial examples and black-box attacks},
+    author={Liu, Yanpei and Chen, Xinyun and Liu, Chang and Song, Dawn},
+    journal=ARXIV,
+    volume={abs/1611.02770},
+    year={2016}
+}
+
+@article{LiuICLR2017,
+    title={Delving into transferable adversarial examples and black-box attacks},
+    author={Liu, Yanpei and Chen, Xinyun and Liu, Chang and Song, Dawn},
+    journal=ICLR,
+    year={2017}
+}
+
+@article{LiuARXIV2018b,
+    author    = {Xuanqing Liu and Cho-Jui Hsieh},
+    title     = {From Adversarial Training to Generative Adversarial Networks},
+    journal   = ARXIV,
+    volume    = {abs/1807.10454},
+    year      = {2018},
+}
+
+@inproceedings{LiuICCV2015,
+    author    = {Ziwei Liu and Ping Luo and Xiaogang Wang and Xiaoou Tang},
+    title     = {Deep Learning Face Attributes in the Wild},
+    booktitle = ICCV,
+    _pages     = {3730--3738},
+    year      = {2015},
+}
+
+@inproceedings{Long2017CVPRWORK,
+    author    = {Chengjiang Long and Eric Smith and Arslan Basharat and Anthony Hoogs},
+    title     = {A C3D-Based Convolutional Neural Network for Frame Dropping Detection in a Single Video Shot},
+    booktitle = CVPRWORK,
+    _pages     = {1898--1906},
+    year      = {2017},
+}
+
+@article{LotterARXIV2016,
+    author    = {William Lotter and Gabriel Kreiman and David D. Cox},
+    title     = {Deep Predictive Coding Networks for Video Prediction and Unsupervised
+    Learning},
+    journal   = ARXIV,
+    volume    = {abs/1605.08104},
+    year      = {2016},
+}
+
+@inproceedings{LouizosICML2017,
+    author    = {Christos Louizos and Max Welling},
+    title     = {Multiplicative Normalizing Flows for Variational Bayesian Neural Networks},
+    booktitle = ICML,
+    _pages     = {2218--2227},
+    year      = {2017},
+}
+
+@article{LuARXIV2017,
+    title={No need to worry about adversarial examples in object detection in autonomous vehicles},
+    author={Lu, Jiajun and Sibai, Hussein and Fabry, Evan and Forsyth, David},
+    journal=ARXIV,
+    volume={abs/1707.03501},
+    year={2017}
+}
+
+@article{LuoARXIV2017,
+    title={Unsupervised learning of long-term motion dynamics for videos},
+    author={Luo, Zelun and Peng, Boya and Huang, De-An and Alahi, Alexandre and Fei-Fei, Li},
+    journal=ARXIV,
+    volume={abs/1701.01821},
+    year={2017}
+}
+
+@article{LuoARXIV2018,
+    author    = {Bo Luo and Yannan Liu and Lingxiao Wei and Qiang Xu},
+    title     = {Towards Imperceptible and Robust Adversarial Example Attacks against Neural Networks},
+    journal   = ARXIV,
+    volume    = {abs/1801.04693},
+    year      = {2018},
+}
+
+@inproceedings{LuoAAAI2018,
+  author    = {Bo Luo and Yannan Liu and Lingxiao Wei and Qiang Xu},
+  title     = {Towards Imperceptible and Robust Adversarial Example Attacks Against Neural Networks},
+  booktitle = AAAI,
+  _pages     = {1652--1659},
+  year      = {2018},
+}
+
+@inproceedings{MaCVPR2017,
+    author    = {Wei{-}Chiu Ma and e{-}An Huang and Namhoon Lee and Kris M. Kitani},
+    title     = {Forecasting Interactive Dynamics of Pedestrians with Fictitious Play},
+    booktitle = CVPR,
+    _pages     = {4636--4644},
+    year      = {2017},
+}
+
+@article{MaARXIV2018,
+    author = {Xingjun Ma and Bo Li and Yisen Wang adn Sarah M. Erfani and Sudanthi Wijewickrema and Michael E. Houle and Grant Schoenebeck and Dawn Song and James Bailey},
+    title = {Characterizing Adversarial Subspaces Using Local Intrinsic Dimensionality},
+    journal = ARXIV,
+    volume = {abs/1801.02613},
+    year = {2018},
+}
+
+@article{MaddisonARXIV2016,
+    author = {Chris J. Maddison and Andriy Mnih and Yee Whye Teh},
+    title = {The Concrete Distribution: {A} Continuous Relaxation of Discrete Random Variables},
+    journal = ARXIV,
+    volume = {abs/1611.00712},
+    year = {2016},
+}
+
+@article{MadryARXIV2017,
+    title={Towards deep learning models resistant to adversarial attacks},
+    author={Madry, Aleksander and Makelov, Aleksandar and Schmidt, Ludwig and Tsipras, Dimitris and Vladu, Adrian},
+    journal=ARXIV,
+    volume={abs/1706.06083},
+    year={2017}
+}
+
+@article{MadryICLR2018,
+    title={Towards deep learning models resistant to adversarial attacks},
+    author={Madry, Aleksander and Makelov, Aleksandar and Schmidt, Ludwig and Tsipras, Dimitris and Vladu, Adrian},
+    journal=ICLR,
+    year={2018}
+}
+
+@article{MakhzaniARXIV2015,
+    author    = {Alireza Makhzani and Jonathon Shlens and Navdeep Jaitly and Ian J. Goodfellow},
+    title     = {Adversarial Autoencoders},
+    journal   = ARXIV,
+    volume    = {abs/1511.05644},
+    year      = {2015},
+}
+
+@article{Martius2016ARXIV,
+    author    = {Georg Martius and
+    Christoph H. Lampert},
+    title     = {Extrapolation and learning equations},
+    journal   = ARXIV,
+    volume    = {abs/1610.02995},
+    year      = {2016},
+}
+
+@inproceedings{MartonISRR2009,
+    author    = {Zoltan{-}Csaba Marton and Lucian Cosmin Goron and Radu Bogdan Rusu an Michael Beetz},
+    title     = {Reconstruction and Verification of 3D Object Models for Grasping},
+    booktitle = ISRR,
+    _pages     = {315--328},
+    year      = {2009},
+}
+
+@article{MathieuARXIV2015,
+    author    = {Micha{\"{e}}l Mathieu and Camille Couprie and Yann LeCun},
+    title     = {Deep multi-scale video prediction beyond mean square error},
+    journal   = ARXIV,
+    volume    = {abs/1511.05440},
+    year      = {2015},
+}
+
+@inproceedings{MelisICCVWORK2017,
+    author    = {Marco Melis and Ambra Demontis and Battista Biggio and Gavin Brown and Giorgio Fumera and Fabio Roli},
+    title     = {Is Deep Learning Safe for Robot Vision? Adversarial Examples Against
+    the iCub Humanoid},
+    booktitle = ICCVWORK,
+    _pages     = {751--759},
+    year      = {2017},
+}
+
+@article{MeschederARXIV2017,
+    author    = {Lars M. Mescheder and Sebastian Nowozin and Andreas Geiger},
+    title     = {The Numerics of GANs},
+    journal   = ARXIV,
+    volume    = {abs/1705.10461},
+    year      = {2017},
+}
+
+@article{MetzenARXIV2017,
+    author    = {Jan Hendrik Metzen and Tim Genewein and Volker Fischer and Bastian Bischoff},
+    title     = {On Detecting Adversarial Perturbations},
+    journal   = ARXIV,
+    volume    = {abs/1702.04267},
+    year      = {2017},
+}
+
+@article{Mikolov2015ARXIV,
+    author    = {Tomas Mikolov and Armand Joulin and Marco Baroni},
+    title     = {A Roadmap towards Machine Intelligence},
+    journal   = {CoRR},
+    volume    = {abs/1511.08130},
+    year      = {2015},
+}
+
+@article{MillerARXIV2016,
+    title={Key-value memory networks for directly reading documents},
+    author={Miller, Alexander and Fisch, Adam and Dodge, Jesse and Karimi, Amir-Hossein and Bordes, Antoine and Weston, Jason},
+    journal=ARXIV,
+    volume={abs/1606.03126},
+    year={2016}
+}
+
+@article{MiyatoARXIV2015,
+    title={Distributional smoothing with virtual adversarial training},
+    author={Miyato, Takeru and Maeda, Shin-ichi and Koyama, Masanori and Nakae, Ken and Ishii, Shin},
+    journal=ARXIV,
+    volume={abs/1507.00677},
+    year={2015}
+}
+
+@article{MiyatoICLR2016,
+    title={Distributional smoothing with virtual adversarial training},
+    author={Miyato, Takeru and Maeda, Shin-ichi and Koyama, Masanori and Nakae, Ken and Ishii, Shin},
+    journal=ICLR,
+    year={2016}
+}
+
+@article{MiyatoICLR2017,
+    title={Adversarial Training Methods for Semi-Supervised Text Classification},
+    author={Takeru Miyato and Andrew M. Dai and Ian Goodfellow},
+    journal=ICLR,
+    year={2017},
+}
+
+@article{MiyatoPAMI2018,
+    title={Virtual adversarial training: a regularization method for supervised and semi-supervised learning},
+    author={Miyato, Takeru and Maeda, Shin-ichi and Ishii, Shin and Koyama, Masanori},
+    journal=PAMI,
+    year={2018},
+}
+
+@article{Moller1997JGT,
+    author = {M\"{o}ller, Tomas and Trumbore, Ben},
+    title = {Fast, Minimum Storage Ray-triangle Intersection},
+    journal = JGT,
+    issue_date = {1997},
+    volume = {2},
+    number = {1},
+    year = {1997},
+    pages = {21--28},
+} 
+
+@article{MoonsFTCGV2010,
+    year = {2010},
+    volume = {4},
+    journal = FTCGV,
+    title = {3D Reconstruction from Multiple Images Part 1: Principles},
+    number = {4},
+    pages = {287-404},
+    author = {Theo Moons and Luc Van Gool and Maarten Vergauwen}
+}
+
+@article{MoosaviARXIV2016,
+    title={Universal adversarial perturbations},
+    author={Moosavi-Dezfooli, Seyed-Mohsen and Fawzi, Alhussein and Fawzi, Omar and Frossard, Pascal},
+    journal=ARXIV,
+    volume={abs/1610.08401},
+    year={2016}
+}
+
+@inproceedings{MoosaviCVPR2017,
+  author    = {Seyed{-}Mohsen Moosavi{-}Dezfooli and Alhussein Fawzi and Omar Fawzi and Pascal Frossard},
+  title     = {Universal Adversarial Perturbations},
+  booktitle = CVPR,
+  _pages     = {86--94},
+  year      = {2017},
+}
+
+@inproceedings{MoosaviCVPR2016,
+    author    = {Seyed{-}Mohsen Moosavi{-}Dezfooli and Alhussein Fawzi and Pascal Frossard},
+    title     = {DeepFool: {A} Simple and Accurate Method to Fool Deep Neural Networks},
+    booktitle = CVPR,
+    _pages     = {2574--2582},
+    year      = {2016},
+}
+
+@article{NeverovaARXIV2017,
+    author    = {Natalia Neverova and Pauline Luc and Camille Couprie and Jakob J. Verbeek and Yann LeCun},
+    title     = {Predicting Deeper into the Future of Semantic Segmentation},
+    journal   = ARXIV,
+    volume    = {abs/1703.07684},
+    year      = {2017},
+}
+
+@inproceedings{NarodytskaCVPRWORK2017,
+    author    = {Nina Narodytska and Shiva Prasad Kasiviswanathan},
+    title     = {Simple Black-Box Adversarial Attacks on Deep Neural Networks},
+    booktitle = CVPRWORK,
+    _pages     = {1310--1318},
+    year      = {2017},
+}
+
+@article{NayebiARXIV2017,
+    author    = {Aran Nayebi and Surya Ganguli},
+    title     = {Biologically inspired protection of deep networks from adversarial attacks},
+    journal   = ARXIV,
+    volume    = {abs/1703.09202},
+    year      = {2017},
+}
+
+@inproceedings{NgyuenCVPR2015,
+    title={Deep neural networks are easily fooled: High confidence predictions for unrecognizable images},
+    author={Nguyen, Anh and Yosinski, Jason and Clune, Jeff},
+    booktitle=CVPR,
+    _pages={427--436},
+    year={2015}
+}
+
+@article{Noroozi2017ARXIV,
+    author    = {Mehdi Noroozi and Hamed Pirsiavash and Paolo Favaro},
+    title     = {Representation Learning by Learning to Count},
+    journal   = ARXIV,
+    volume    = {abs/1708.06734},
+    year      = {2017},
+}
+
+@inproceedings{NorouziNIPS2016,
+    title={Reward augmented maximum likelihood for neural structured prediction},
+    author={Norouzi, Mohammad and Bengio, Samy and Jaitly, Navdeep and Schuster, Mike and Wu, Yonghui and Schuurmans, Dale and others},
+    booktitle=NIPS,
+    _pages={1723--1731},
+    year={2016}
+}
+
+@inproceedings{NowozinNIPS2016,
+    author    = {Sebastian Nowozin and Botond Cseke and Ryota Tomioka},
+    title     = {f-GAN: Training Generative Neural Samplers using Variational Divergence Minimization},
+    booktitle = NIPS,
+    _pages     = {271--279},
+    year      = {2016},
+}
+
+@inproceedings{OhICCV2015,
+    author    = {Seong Joon Oh and Rodrigo Benenson and Mario Fritz and Bernt Schiele},
+    title     = {Person Recognition in Personal Photo Collections},
+    booktitle = ICCV,
+    _pages     = {3862--3870},
+    year      = {2015},
+}
+
+@inproceedings{OhECCV2016,
+    author    = {Seong Joon Oh and Rodrigo Benenson and Mario Fritz and Bernt Schiele},
+    title     = {Faceless Person Recognition: Privacy Implications in Social Media},
+    booktitle = ECCV,
+    _pages     = {19--35},
+    year      = {2016},
+}
+
+@article{OhARXIV2017,
+    author    = {Seong Joon Oh and Mario Fritz and Bernt Schiele},
+    title     = {Adversarial Image Perturbation for Privacy Protection - {A} Game Theory Perspective},
+    journal   = ARXIV,
+    volume    = {abs/1703.09471},
+    year      = {2017},
+}
+
+@article{OhARXIV2017b,
+    author    = {Seong Joon Oh and Max Augustin and Bernt Schiele and Mario Fritz},
+    title={Towards reverse-engineering black-box neural networks},
+    journal   = ARXIV,
+    volume    = {abs/1711.01768},
+    year      = {2017},
+}
+
+@article{OhICLR2018,
+  title={Towards reverse-engineering black-box neural networks},
+  author={Oh, Seong Joon and Augustin, Max and Fritz, Mario and Schiele, Bernt},
+  journal={ICLR},
+  year={2018}
+}
+
+@article{OrekondyARXIV2017,
+    author    = {Tribhuvanesh Orekondy and Bernt Schiele and Mario Fritz},
+    title     = {Towards a Visual Privacy Advisor: Understanding and Predicting Privacy Risks in Images},
+    journal   = ARXIV,
+    volume    = {abs/1703.10660},
+    year      = {2017},
+}
+
+@inproceedings{PapernotSP2016,
+    author    = {Nicolas Papernot and Patrick D. McDaniel and Xi Wu and Somesh Jha and Ananthram Swami},
+    title     = {Distillation as a Defense to Adversarial Perturbations Against Deep Neural Networks},
+    booktitle = SP,
+    _pages     = {582--597},
+    year      = {2016},
+}
+
+@inproceedings{PapernotSP2016b,
+    author    = {Nicolas Papernot and Patrick D. McDaniel and Somesh Jha and Matt Fredrikson and Z. Berkay Celik and Ananthram Swami},
+    title     = {The Limitations of Deep Learning in Adversarial Settings},
+    booktitle = SP,
+    _pages     = {372--387},
+    year      = {2016},
+}
+
+@article{PapernotARXIV2018,
+    author    = {Nicolas Papernot and Patrick D. McDaniel},
+    title     = {Deep k-Nearest Neighbors: Towards Confident, Interpretable and Robust Deep Learning},
+    journal   = ARXIV,
+    volume    = {abs/1803.04765},
+    year      = {2018},
+}
+
+@inproceedings{PapernotASIACCS2017,
+    title = {Practical black-box attacks against machine learning},
+    author = {Nicolas Papernot and Patrick McDaniel and Ian Goodfellow and Somesh Jha and Z. Berkay Celik and Ananthram Swami},
+    booktitle = ASIACCS,
+    _pages = {506--519},
+    year = {2017},
+    organization = {ACM}
+}
+
+@inproceedings{ParkCVPR2016,
+    author    = {Hyun Soo Park and Jyh{-}Jing Hwang and Yedong Niu and Jianbo Shi},
+    title     = {Egocentric Future Localization},
+    booktitle = CVPR,
+    _pages     = {4697--4705},
+    year      = {2016},
+}
+
+@article{PaulyTG2008,
+    author    = {Mark Pauly and Niloy J. Mitra and Johannes Wallner and Helmut Pottmann and Leonidas J. Guibas},
+    title     = {Discovering structural regularity in 3D geometry},
+    journal   = TG,
+    volume    = {27},
+    number    = {3},
+    pages     = {43:1--43:11},
+    year      = {2008},
+}
+
+@inproceedings{PinteaECCV2014,
+    author    = {Silvia L. Pintea and Jan C. van Gemert and Arnold W. M. Smeulders},
+    title     = {D{\'{e}}j{\`{a}} Vu: - Motion Prediction in Static Images},
+    booktitle = ECCV,
+    _pages     = {172--187},
+    year      = {2014},
+}
+
+
+@inproceedings{Pizlo2007CAIP,
+    author    = {Zygmunt Pizlo},
+    title     = {Human Perception of 3D Shapes},
+    booktitle = CAIP,
+    _pages     = {1--12},
+    year      = {2007},
+}
+
+@book{Pizlo2010,
+    title = {{3D} shape: Its unique place in visual perception},
+    author = {Zygmunt Pizlo},
+    year = {2010},
+    publisher = {{MIT} Press}
+}
+
+@article{PrakashARXIV2018,
+    author    = {Aaditya Prakash and Nick Moran and Solomon Garber and Antonella DiLillo and James Storer},
+    title     = {Deflecting Adversarial Attacks with Pixel Deflection},
+    journal   = ARXIV,
+    volume    = {abs/1801.08926},
+    year      = {2018},
+}
+
+@article{PrakashARXIV2018b,
+    author    = {Aaditya Prakash and Nick Moran and Solomon Garber and Antonella DiLillo and James A. Storer},
+    title     = {Protecting {JPEG} Images Against Adversarial Attacks},
+    journal   = ARXIV,
+    volume    = {abs/1803.00940},
+    year      = {2018},
+}
+
+@inproceedings{PrakashDCC2018,
+  author    = {Aaditya Prakash and Nick Moran and Solomon Garber and Antonella DiLillo and James A. Storer},
+  title     = {Protecting {JPEG} Images Against Adversarial Attacks},
+  booktitle = DCC,
+  _pages     = {137--146},
+  year      = {2018},
+}
+
+@article{RaghunathanARXIV2018,
+    author    = {Aditi Raghunathan and Jacob Steinhardt and Percy Liang},
+    title     = {Certified Defenses against Adversarial Examples},
+    journal   = ARXIV,
+    volume    = {abs/1801.09344},
+    year      = {2018},
+}
+
+@inproceedings{RatnerNIPS2016,
+    author    = {Alexander J. Ratner and Christopher De Sa and Sen Wu and Daniel Selsam and Christopher R{\'{e}}},
+    title     = {Data Programming: Creating Large Training Sets, Quickly},
+    booktitle = NIPS,
+    _pages     = {3567--3575},
+    year      = {2016},
+}
+
+@inproceedings{RatnerNIPS2017,
+    author    = {Alexander J. Ratner and Henry R. Ehrenberg and Zeshan Hussain and Jared Dunnmon and Christopher R{\'{e}}},
+    title     = {Learning to Compose Domain-Specific Transformations for Data Augmentation},
+    booktitle = NIPS,
+    _pages     = {3239--3249},
+    year      = {2017},
+}
+
+@article{RauberARXIV2017,
+    author    = {Jonas Rauber and Wieland Brendel and Matthias Bethge},
+    title     = {Foolbox v0.8.0: {A} Python toolbox to benchmark the robustness of
+    machine learning models},
+    journal   = ARXIV,
+    volume    = {abs/1707.04131},
+    year      = {2017},
+}
+
+@inproceedings{RavalCVPRWORK2017,
+    author    = {Nisarg Raval and Ashwin Machanavajjhala and Landon P. Cox},
+    title     = {Protecting Visual Secrets Using Adversarial Nets},
+    booktitle = CVPRWORK,
+    :pages     = {1329--1332},
+    year      = {2017},
+}
+
+@inproceedings{RezendeICML2014,
+    author    = {Danilo Jimenez Rezende and Shakir Mohamed and Daan Wierstra},
+    title     = {Stochastic Backpropagation and Approximate Inference in Deep Generative Models},
+    booktitle = ICML,
+    _pages     = {1278--1286},
+    year      = {2014},
+}
+
+@inproceedings{RezendeICML2015,
+    author    = {Danilo Jimenez Rezende and Shakir Mohamed},
+    title     = {Variational Inference with Normalizing Flows},
+    booktitle = ICML,
+    _pages     = {1530--1538},
+    year      = {2015},
+}
+
+@article{RitchieARXIV2016,
+    author    = {Daniel Ritchie and Paul Horsfall and Noah D. Goodman},
+    title     = {Deep Amortized Inference for Probabilistic Programs},
+    journal   = ARXIV,
+    volume    = {abs/1610.05735},
+    year      = {2016},
+}
+
+@article{RoscaARXIV2017,
+    author    = {Mihaela Rosca and Balaji Lakshminarayanan and David Warde-Farley and Shakir Mohamed},
+    title     = {Variational Approaches for Auto-Encoding Generative Adversarial Networks},
+    journal   = ARXIV,
+    volume    = {abs/1706.04987},
+    year      = {2017},
+}
+
+@article{RossARXIV2017,
+    author    = {Andrew Slavin Ross and Finale Doshi{-}Velez},
+    title     = {Improving the Adversarial Robustness and Interpretability of Deep Neural Networks by Regularizing their Input Gradients},
+    journal   = ARXIV,
+    volume    = {abs/1711.09404},
+    year      = {2017},
+}
+
+@inproceedings{RossAAAI2018,
+  author    = {Andrew Slavin Ross and Finale Doshi{-}Velez},
+  title     = {Improving the Adversarial Robustness and Interpretability of Deep Neural Networks by Regularizing Their Input Gradients},
+  booktitle = AAAI,
+  _pages     = {1660--1669},
+  year      = {2018},
+}
+
+@inproceedings{RozsaICMLA2016,
+    author    = {Andras Rozsa and Manuel G{\"{u}}nther and Terrance E. Boult},
+    title     = {Are Accuracy and Robustness Correlated},
+    booktitle = ICMLA,
+    year      = {2016},
+}
+
+@inproceedings{RozsaCVPRWORK2016,
+    author    = {Andras Rozsa and Ethan M. Rudd and Terrance E. Boult},
+    title     = {Adversarial Diversity and Hard Positive Generation},
+    booktitle = CVPRWORK,
+    _pages     = {410--417},
+    year      = {2016},
+}
+
+@article{RozsaARXIV2017,
+    author    = {Andras Rozsa and Manuel G{\"{u}}nther and Terrance E. Boult},
+    title     = {Adversarial Robustness: Softmax versus Openmax},
+    journal   = ARXIV,
+    volume    = {abs/1708.01697},
+    year      = {2017},
+}
+
+@inproceedings{RoszaBMVC2017,
+  author    = {Andras Rozsa and Manuel G{\"{u}}nther and Terrance E. Boult},
+  title     = {Adversarial Robustness: Softmax versus Openmax},
+  booktitle = BMVC,
+  year      = {2017},
+}
+
+@inproceedings{RozsaIJCB2017,
+    author    = {Andras Rozsa and Manuel G{\"{u}}nther and Terrance E. Boult},
+    title     = {{LOTS} about attacking deep features},
+    booktitle = IJCB,
+    _pages     = {168--176},
+    year      = {2017},
+}
+
+@article{RussakovskyARXIV2014,
+    author  = {Olga Russakovsky and Jia Deng and Hao Su and Jonathan Krause and Sanjeev Satheesh and Sean Ma and Zhiheng Huang and Andrej Karpathy and Aditya Khosla and Michael Bernstein and Alexander C. Berg and Li Fei-Fei},
+    title   = {ImageNet Large Scale Visual Recognition Challenge},
+    journal = ARXIV,
+    year    = {2014},
+    volume  = {abs/1409.0575},
+}
+
+@article{RussakovskyIJCV2015,
+  author    = {Olga Russakovsky and Jia Deng and Hao Su and Jonathan Krause and Sanjeev Satheesh and Sean Ma and Zhiheng Huang and Andrej Karpathy and Aditya Khosla and Michael S. Bernstein and Alexander C. Berg and Fei{-}Fei Li},
+  title     = {ImageNet Large Scale Visual Recognition Challenge},
+  journal   = IJCV,
+  volume    = {115},
+  number    = {3},
+  pages     = {211--252},
+  year      = {2015},
+}
+
+@article{RusuARXIV2016,
+    title={Progressive neural networks},
+    author={Rusu, Andrei A and Rabinowitz, Neil C and Desjardins, Guillaume and Soyer, Hubert and Kirkpatrick, James and Kavukcuoglu, Koray and Pascanu, Razvan and Hadsell, Raia},
+    journal=ARXIV,
+    volume={abs/1606.04671},
+    year={2016}
+}
+
+@inproceedings{SabourNIPS2017,
+    title={Dynamic routing between capsules},
+    author={Sabour, Sara and Frosst, Nicholas and Hinton, Geoffrey E},
+    booktitle=NIPS,
+    _pages={3859--3869},
+    year={2017}
+}
+
+@article{SabourARXIV2015,
+  author    = {Sara Sabour and Yanshuai Cao and Fartash Faghri and David J. Fleet},
+  title     = {Adversarial Manipulation of Deep Representations},
+  journal   = {CoRR},
+  volume    = {abs/1511.05122},
+  year      = {2015},
+}
+
+@inproceedings{SalaICCVWork2015,
+    title={3-D Volumetric Shape Abstraction from a Single 2-D Image},
+    author={Sala, Pablo and Dickinson, Sven},
+    booktitle=ICCVWORK,
+    _pages={1--9},
+    year={2015}
+}
+
+@article{SamangoueiICLR2018,
+    title={Defense-{GAN}: Protecting Classifiers Against Adversarial Attacks Using Generative Models},
+    author={Pouya Samangouei, Maya Kabkab, Rama Chellappa},
+    journal=ICLR,
+    year={2018},
+}
+
+@inproceedings{SandhuCVPR2009,
+    author    = {Romeil Sandhu and Samuel Dambreville and Anthony J. Yezzi and Allen Tannenbaum},
+    title     = {Non-rigid 2D-3D pose estimation and 2D image segmentation},
+    booktitle = CVPR,
+    _pages     = {786--793},
+    year      = {2009},
+}
+
+@article{SarkarARXIV2017,
+  author    = {Sayantan Sarkar and Ankan Bansal and Upal Mahbub and Rama Chellappa},
+  title     = {{UPSET} and {ANGRI} : Breaking High Performance Image Classifiers},
+  journal   = ARXIV,
+  volume    = {abs/1707.01159},
+  year      = {2017},
+}
+
+@inproceedings{Schaefer2004SRMAM,
+    author    = {Gerald Schaefer and Michal Stich},
+    title     = {{UCID:} an uncompressed color image database},
+    booktitle = SRMAM,
+    _pages     = {472--480},
+    year      = {2004},
+}
+
+@article{SchottARXIV2018,
+    author    = {Lukas Schott and Jonas Rauber and Wieland Brendel and Matthias Bethge},
+    title     = {Towards the first adversarially robust neural network model on MNIST},
+    journal   = ARXIV,
+    volume    = {abs/1805.09190},
+    year      = {2018},
+}
+
+@article{SchmidtARXIV2018,
+    author    = {Ludwig Schmidt and Shibani Santurkar and Dimitris Tsipras and Kunal Talwar and Aleksander Madry},
+    title     = {Adversarially Robust Generalization Requires More Data},
+    journal   = {CoRR},
+    volume    = ARXIV,
+    year      = {2018},
+}
+
+@article{Seshia2016ARXIV,
+    author    = {Sanjit A. Seshia and Dorsa Sadigh},
+    title     = {Towards Verified Artificial Intelligence},
+    journal   = ARXIV,
+    volume    = {abs/1606.08514},
+    year      = {2016},
+}
+
+@article{ShahamARXIV2015,
+    title={Understanding adversarial training: Increasing local stability of neural nets through robust optimization},
+    author={Shaham, Uri and Yamada, Yutaro and Negahban, Sahand},
+    journal=ARXIV,
+    volume={abs/1511.05432},
+    year={2015}
+}
+
+@article{ShahamNEUROCOMPUTING2018,
+    title={Understanding adversarial training: Increasing local stability of supervised models through robust optimization},
+    author={Uri Shaham and Yutaro Yamada and Sahand Negahban},
+    journal=NEUROCOMPUTING,
+    year={2018},
+    volume={307},
+    pages={195-204}
+}
+
+@article{SharifARXIV2018,
+    author    = {Mahmood Sharif and Lujo Bauer and Michael K. Reiter},
+    title     = {On the Suitability of L\({}_{\mbox{p}}\)-norms for Creating and Preventing
+    Adversarial Examples},
+    journal   =ARXIV,
+    volume    = {abs/1802.09653},
+    year      = {2018},
+}
+
+@article{SharmaARXIV2017,
+    title={Attacking the Madry Defense Model with L1-based Adversarial Examples},
+    author={Yash Sharma and Pin-Yu Chen},
+    journal=ARXIV,
+    volume={abs/1710.10733},
+    year={2017}
+}
+
+@article{ShenARXIV2017,
+    title={APE-GAN: Adversarial Perturbation Elimination with GAN},
+    author={Shiwei Shen and Guoqing Jin and Ke Gao and Yongdong Zhang},
+    journal=ARXIV,
+    volume={abs/1707.05474},
+    year={2017}
+}
+
+@inproceedings{ShokriSP2017,
+    author    = {Reza Shokri and Marco Stronati and Congzheng Song and Vitaly Shmatikov},
+    title     = {Membership Inference Attacks Against Machine Learning Models},
+    booktitle = SP,
+    _pages     = {3--18},
+    year      = {2017},
+}
+
+@article{SimonGabrielARXIV2018,
+    author    = {Carl-Johann Simon-Gabriel and Yann Ollivier and Bernhard Sch\"{o}lkopf and Léon Bottou and David Lopez-Paz},
+    title     = {Adversarial Vulnerability of Neural Networks Increases With Input Dimension},
+    journal   = ARXIV,
+    volume    = {abs/1802.01421},
+    year      = {2018},
+}
+
+@article{SimonyanARXIV2014,
+  author    = {Karen Simonyan and Andrew Zisserman},
+  title     = {Very Deep Convolutional Networks for Large-Scale Image Recognition},
+  journal   = ARXIV,
+  volume    = {abs/1409.1556},
+  year      = {2014},
+}
+
+@article{SinhaARXIV2017,
+    author    = {Aman Sinha and Hongseok Namkoong and John C. Duchi},
+    title     = {Certifiable Distributional Robustness with Principled Adversarial
+    Training},
+    journal   = ARXIV,
+    volume    = {abs/1710.10571},
+    year      = {2017},
+}
+
+@article{SinhaICLR2018,
+    author    = {Aman Sinha and Hongseok Namkoong and John C. Duchi},
+    title     = {Certifiable Distributional Robustness with Principled Adversarial
+    Training},
+    journal   = ICLR,
+    year      = {2018},
+}
+
+@article{SixtFRAI2018,
+    author    = {Leon Sixt and Benjamin Wild and Tim Landgraf},
+    title     = {RenderGAN: Generating Realistic Labeled Data},
+    journal   = FRAI,
+    volume    = {2018},
+    year      = {2018},
+}
+
+@article{SmithARXIV2017,
+    author    = {Edward Smith and David Meger},
+    title     = {Improved Adversarial Systems for 3D Object Generation and Reconstruction},
+    journal   = ARXIV,
+    volume    = {abs/1707.09557},
+    year      = {2017},
+}
+
+@article{SmithAL2005,
+    title={The development of embodied cognition: Six lessons from babies},
+    author={Smith, Linda and Gasser, Michael},
+    journal=AL,
+    volume={11},
+    number={1-2},
+    pages={13--29},
+    year={2005},
+    publisher={MIT Press}
+}
+
+@article{SongARXIV2018,
+    author    = {Yang Song and Rui Shu and Nate Kushman and Stefano Ermon},
+    title     = {Generative Adversarial Examples},
+    journal   = ARXIV,
+    volume    = {abs/1805.07894},
+    year      = {2018},
+}
+
+@article{SongICLR2018,
+  author    = {Yang Song and Taesup Kim and Sebastian Nowozin and Stefano Ermon and Nate Kushman},
+  title     = {PixelDefend: Leveraging Generative Models to Understand and Defend against Adversarial Examples},
+  journal   = ICLR,
+  year      = {2018},
+}
+
+@article{Springenberg2014ARXIV,
+    author    = {Jost Tobias Springenberg and Alexey Dosovitskiy and Thomas Brox and Martin A. Riedmiller},
+    title     = {Striving for Simplicity: The All Convolutional Net},
+    journal   = ARXIV,
+    volume    = {abs/1412.6806},
+    year      = {2014},
+}
+
+@inproceedings{SrivastavaICML2015,
+    author    = {Nitish Srivastava and Elman Mansimov and Ruslan Salakhutdinov},
+    title     = {Unsupervised Learning of Video Representations using LSTMs},
+    booktitle = ICML,
+    _pages     = {843--852},
+    year      = {2015},
+}
+
+@inproceedings{Stewart2017AAAI,
+    author    = {Russell Stewart and Stefano Ermon},
+    title     = {Label-Free Supervision of Neural Networks with Physics and Domain
+    Knowledge},
+    booktitle = AAAI,
+    _pages     = {2576--2582},
+    year      = {2017},
+}
+
+@article{StraussARXIV2017,
+    title={Ensemble methods as a defense to adversarial perturbations against deep neural networks},
+    author={Strauss, Thilo and Hanselmann, Markus and Junginger, Andrej and Ulmer, Holger},
+    journal=ARXIV,
+    volume={abs/1709.03423},
+    year={2017}
+}
+
+@inproceedings{StutzGCPR2015,
+    author    = {David Stutz},
+    title     = {Superpixel Segmentation: An Evaluation},
+    booktitle = GCPR,
+    _pages     = {555--562},
+    year      = {2015},
+}
+
+@article{StutzARXIV2016,
+    author    = {David Stutz and Alexander Hermans and Bastian Leibe},
+    title     = {Superpixels: An Evaluation of the State-of-the-Art},
+    journal   = ARXIV,
+    volume    = {abs/1612.01601},
+    year      = {2016},
+}
+
+@article{StutzCVIU2018,
+    author    = {David Stutz and Alexander Hermans and Bastian Leibe},
+    title     = {Superpixels: An evaluation of the state-of-the-art},
+    journal   = CVIU,
+    volume    = {166},
+    pages     = {1--27},
+    year      = {2018},
+}
+
+@article{StutzCVPR2018,
+    author    = {David Stutz and Andreas Geiger},
+    title     = {Learning 3D Shape Completion from Point Clouds with Weak Supervision},
+    journal   = CVPR,
+    year      = {2018},
+}
+
+@article{SuARXV2017,
+    author    = {Jiawei Su and Danilo Vasconcellos Vargas and Kouichi Sakurai},
+    title     = {One pixel attack for fooling deep neural networks},
+    journal   = ARXIV,
+    volume    = {abs/1710.08864},
+    year      = {2017},
+}
+
+@article{SuARXV2018,
+    author    = {Dong Su and Huan Zhang and Hongge Chen and Jinfeng Yi and Pin-Yu Chen and Yupeng Gao},
+    title     = {Is Robustness the Cost of Accuracy? -- A Comprehensive Study on the Robustness of 18 Deep Image Classification Models},
+    journal   = ARXIV,
+    volume    = {abs/1808.01688},
+    year      = {2018},
+}
+
+@article{SungTG2015,
+    author    = {Minhyuk Sung and Vladimir G. Kim and Roland Angst and Leonidas J. Guibas},
+    title     = {Data-driven structural priors for shape completion},
+    journal   = TG,
+    volume    = {34},
+    number    = {6},
+    pages     = {175:1--175:11},
+    year      = {2015},
+}
+
+@inproceedings{SukhbaatarNIPS2015,
+    title={End-to-end memory networks},
+    author={Sukhbaatar, Sainbayar and Weston, Jason and Fergus, Rob and others},
+    booktitle=NIPS,
+    _pages={2440--2448},
+    year={2015}
+}
+
+@article{Sutton1998,
+    author    = {Richard S. Sutton and
+    Andrew G. Barto},
+    title     = {Reinforcement Learning: An Introduction},
+    journal   = {{IEEE} Trans. Neural Networks},
+    volume    = {9},
+    number    = {5},
+    pages     = {1054--1054},
+    year      = {1998},
+}
+
+@article{SzegedyARXIV2013,
+    title={Intriguing properties of neural networks},
+    author={Szegedy, Christian and Zaremba, Wojciech and Sutskever, Ilya and Bruna, Joan and Erhan, Dumitru and Goodfellow, Ian and Fergus, Rob},
+    journal=ARXIV,
+    volume={abs/1312.6199},
+    year={2013}
+}
+
+@article{TabacofARXIV2016,
+    author    = {Pedro Tabacof and Julia Tavares and Eduardo Valle},
+    title     = {Adversarial Images for Variational Autoencoders},
+    journal   = ARXIV,
+    volume    = {abs/1612.00155},
+    year      = {2016},
+}
+
+@article{TanayARXIV2016,
+    title={A boundary tilting persepective on the phenomenon of adversarial examples},
+    author={Tanay, Thomas and Griffin, Lewis},
+    journal=ARXIV,
+    volume={abs/1608.07690},
+    year={2016}
+}
+
+@inproceedings{TeoNIPS2007,
+    author    = {Choon Hui Teo and Amir Globerson and Sam T. Roweis and Alexander J. Smola},
+    title     = {Convex Learning with Invariances},
+    booktitle = NIPS,
+    _pages     = {1489--1496},
+    year      = {2007},
+}
+
+@inproceedings{ThrunICCV2005,
+    author    = {Sebastian Thrun and Ben Wegbreit},
+    title     = {Shape from Symmetry},
+    booktitle = ICCV,
+    _pages     = {1824--1831},
+    year      = {2005},
+}
+
+@article{TramerARXIV2017,
+    author    = {Florian Tram{\`{e}}r and Alexey Kurakin and Nicolas Papernot and Dan Boneh and Patrick D. McDaniel},
+    title     = {Ensemble Adversarial Training: Attacks and Defenses},
+    journal   = ARXIV,
+    volume    = {abs/1705.07204},
+    year      = {2017},
+}
+
+@article{TramerICLR2018,
+    author    = {Florian Tram{\`{e}}r and Alexey Kurakin and Nicolas Papernot and Dan Boneh and Patrick D. McDaniel},
+    title     = {Ensemble Adversarial Training: Attacks and Defenses},
+    journal   = ICLR,
+    year      = {2018},
+}
+
+@inproceedings{TramerUSENIX2016,
+    author = {Florian Tram{\`e}r and Fan Zhang and Ari Juels and Michael K. Reiter and Thomas Ristenpart},
+    title = {Stealing Machine Learning Models via Prediction APIs},
+    booktitle = USENIX,
+    _pages = {601--618},
+    year = {2016}
+}
+
+@article{TsiprasARXIV2018,
+    author    = {Dimitris Tsipras and Shibani Santurkar and Logan Engstrom and Alexander Turner and Aleksander Madry},
+    title     = {Robustness May Be at Odds with Accuracy},
+    journal   = ARXIV,
+    volume    = {abs/1805.12152},
+    year      = {2018},
+}
+
+@article{TzengARXIV2017,
+    title={Adversarial discriminative domain adaptation},
+    author={Tzeng, Eric and Hoffman, Judy and Saenko, Kate and Darrell, Trevor},
+    journal=ARXIV,
+    volume={abs/1702.05464},
+    year={2017}
+}
+
+@article{UlyanovARXIV2017,
+    author    = {Dmitry Ulyanov and Andrea Vedaldi and Victor S. Lempitsky},
+    title     = {Deep Image Prior},
+    journal   = ARXIV,
+    volume    = {abs/1711.10925},
+    year      = {2017},
+}
+
+@inproceedings{VanDenOordICML2016,
+    author    = {A{\"{a}}ron van den Oord and Nal Kalchbrenner and Koray Kavukcuoglu},
+    title     = {Pixel Recurrent Neural Networks},
+    booktitle = ICML,
+    _pages     = {1747--1756},
+    year      = {2016},
+}
+
+@inproceedings{VanDenOordNIPS2016,
+    author    = {A{\"{a}}ron van den Oord and Nal Kalchbrenner and Lasse Espeholt and Koray Kavukcuoglu and Oriol Vinyals and Alex Graves},
+    title     = {Conditional Image Generation with PixelCNN Decoders},
+    booktitle = NIPS,
+    _pages     = {4790--4798},
+    year      = {2016},
+}
+
+@inproceedings{VillegasICML2017,
+    author    = {Ruben Villegas and Jimei Yang and Yuliang Zou and Sungryull Sohn and Xunyu Lin and Honglak Lee},
+    title     = {Learning to Generate Long-term Future via Hierarchical Prediction},
+    booktitle = ICML,
+    _pages     = {3560--3569},
+    year      = {2017},
+}
+
+@article{VillegasARXIV2017,
+    author    = {Ruben Villegas and Jimei Yang and Seunghoon Hong and Xunyu Lin and Honglak Lee},
+    title     = {Decomposing Motion and Content for Natural Video Sequence Prediction},
+    journal   = ARXIV,
+    volume    = {abs/1706.08033},
+    year      = {2017},
+}
+
+@inproceedings{VinyalsNIPS2015,
+    title={Pointer networks},
+    author={Vinyals, Oriol and Fortunato, Meire and Jaitly, Navdeep},
+    booktitle=NIPS,
+    _pages={2692--2700},
+    year={2015}
+}
+
+@inproceedings{VondrickCVPR2012,
+    author    = {Carl Vondrick and Hamed Pirsiavash and Antonio Torralba},
+    title     = {Anticipating Visual Representations from Unlabeled Video},
+    booktitle = CVPR,
+    _pages     = {98--106},
+    year      = {2016},
+}
+
+@inproceedings{VondrickCVPR2017,
+    author    = {Carl Vondrick and Antonio Torralba},
+    title     = {Generating the Future with Adversarial Transformers},
+    booktitle = CVPR,
+    _pages     = {2992--3000},
+    year      = {2017},
+}
+
+@inproceedings{VondrickNIPS2016,
+    author    = {Carl Vondrick and Hamed Pirsiavash and Antonio Torralba},
+    title     = {Generating Videos with Scene Dynamics},
+    booktitle = NIPS,
+    _pages     = {613--621},
+    year      = {2016},
+}
+
+@article{WalkerARXIV2017,
+    author    = {Jacob Walker and Kenneth Marino and Abhinav Gupta and Martial Hebert},
+    title     = {The Pose Knows: Video Forecasting by Generating Pose Futures},
+    journal   = ARXIV,
+    volume    = {abs/1705.00053},
+    year      = {2017},
+}
+
+@inproceedings{WalkerECCV2016,
+    author    = {Jacob Walker and Carl Doersch and Abhinav Gupta and Martial Hebert},
+    title     = {An Uncertain Future: Forecasting from Static Images Using Variational Autoencoders},
+    booktitle = ECCV,
+    _pages     = {835--851},
+    year      = {2016},
+}
+
+@inproceedings{WalkerICCV2015,
+    author    = {Jacob Walker and Abhinav Gupta and Martial Hebert},
+    title     = {Dense Optical Flow Prediction from a Static Image},
+    booktitle = ICCV,
+    _pages     = {2443--2451},
+    year      = {2015},
+}
+
+@inproceedings{WalkerCVPR2014,
+    author    = {Jacob Walker and Abhinav Gupta and Martial Hebert},
+    title     = {Patch to the Future: Unsupervised Visual Prediction},
+    booktitle = CVPR,
+    _pages     = {3302--3309},
+    year      = {2014},
+}
+
+@article{WangARXIV2016,
+    author    = {Dilin Wang and Qiang Liu},
+    title     = {Learning to Draw Samples: With Application to Amortized {MLE} for Generative Adversarial Learning},
+    journal   = ARXIV,
+    volume    = {abs/1611.01722},
+    year      = {2016},
+}
+
+@inproceedings{WangICML2018,
+    author    = {Yizhen Wang and Somesh Jha and Kamalika Chaudhuri},
+    title     = {Analyzing the Robustness of Nearest Neighbors to Adversarial Examples},
+    booktitle = ICML,
+    _pages     = {5120--5129},
+    year      = {2018},
+}
+
+@inproceedings{WangSP2018,
+    title = {Stealing Hyperparameters in Machine Learning},
+    author = {Binghui Wang and Neil Zhenqiang Gong},
+    booktitle = SP,
+    year = {2018}
+}
+
+@inproceedings{Wei2017CVPR,
+    author    = {Yunchao Wei and Jiashi Feng and Xiaodan Liang and Ming{-}Ming Cheng and Yao Zhao and Shuicheng Yan},
+    title     = {Object Region Mining with Adversarial Erasing: {A} Simple Classification to Semantic Segmentation Approach},
+    booktitle = CVPR,
+    _pages     = {6488--6496},
+    year      = {2017},
+}
+
+@article{Weston2014ARXIV,
+    author    = {Jason Weston and Sumit Chopra and Antoine Bordes},
+    title     = {Memory Networks},
+    journal   = ARXIV,
+    volume    = {abs/1410.3916},
+    year      = {2014},
+}
+
+@inproceedings{Williams2005SIGGRAPH,
+    author = {Williams, Amy and Barrus, Steve and Morley, R. Keith and Shirley, Peter},
+    title = {An Efficient and Robust Ray-box Intersection Algorithm},
+    booktitle = SIGGRAPH,
+    year = {2005},
+    number = {9},
+} 
+
+@article{WongARXIV2017,
+    author    = {J. Zico Kolter and Eric Wong},
+    title     = {Provable defenses against adversarial examples via the convex outer adversarial polytope},
+    journal   = ARXIV,
+    volume    = {abs/1711.00851},
+    year      = {2017},
+}
+
+@inproceedings{WuNIPS2016,
+    author    = {Jiajun Wu and Chengkai Zhang and Tianfan Xue and Bill Freeman and Josh Tenenbaum},
+    title     = {Learning a Probabilistic Latent Space of Object Shapes via 3D Generative-Adversarial Modeling},
+    booktitle = NIPS,
+    _pages     = {82--90},
+    year      = {2016},
+}
+
+@article{WuARXIV2017,
+    author    = {Xi Wu and Uyeong Jang and Lingjiao Chen and Somesh Jha},
+    title     = {Reinforcing Adversarial Robustness using Model Confidence Induced by Adversarial Training},
+    journal   = ARXIV,
+    volume    = {abs/1711.08001},
+    year      = {2017},
+}
+
+@inproceedings{WuICML2018,
+  author    = {Xi Wu and Uyeong Jang and Jiefeng Chen and Lingjiao Chen and Somesh Jha},
+  title     = {Reinforcing Adversarial Robustness using Model Confidence Induced by Adversarial Training},
+  booktitle = ICML,
+  _pages     = {5330--5338},
+  year      = {2018},
+}
+
+
+@article{XiaoARXIV2017,
+    author    = {Han Xiao and Kashif Rasul and Roland Vollgraf},
+    title     = {{Fashion-MNIST}: a Novel Image Dataset for Benchmarking Machine Learning Algorithms},
+    journal   = ARXIV,
+    volume    = {abs/1708.07747},
+    year      = {2017},
+}
+
+@article{XiaoARXIV2018,
+    author    = {Chaowei Xiao and Jun{-}Yan Zhu and Bo Li and Warren He and Mingyan Liu and Dawn Song},
+    title     = {Spatially Transformed Adversarial Examples},
+    journal   = ARXIV,
+    volume    = {abs/1801.02612},
+    year      = {2018},
+}
+
+@article{XiaoICLR2018,
+    author    = {Chaowei Xiao and Jun{-}Yan Zhu and Bo Li and Warren He and Mingyan Liu and Dawn Song},
+    title     = {Spatially Transformed Adversarial Examples},
+    journal   = ICLR,
+    year      = {2018},
+}
+
+@article{XieARXIV2016,
+    author    = {Lingxi Xie and Jingdong Wang and Zhen Wei and Meng Wang and Qi Tian},
+    title     = {DisturbLabel: Regularizing {CNN} on the Loss Layer},
+    journal   = ARXIV,
+    volume    = {abs/1605.00055},
+    year      = {2016},
+}
+
+@article{XieARXIV2017,
+    author    = {Cihang Xie and Jianyu Wang and Zhishuai Zhang and Zhou Ren and Alan L. Yuille},
+    title     = {Mitigating adversarial effects through randomization},
+    journal   = ARXIV,
+    volume    = {abs/1711.01991},
+    year      = {2017},
+}
+
+@article{XieICLR2018,
+    author    = {Cihang Xie and Jianyu Wang and Zhishuai Zhang and Zhou Ren and Alan L. Yuille},
+    title     = {Mitigating adversarial effects through randomization},
+    journal   = ICLR,
+    year      = {2018},
+}
+
+@article{XieARXIV2018,
+    author    = {Cihang Xie and Zhishuai Zhang and Jianyu Wang and Yuyin Zhou and Zhou Ren and Alan L. Yuille},
+    title     = {Improving Transferability of Adversarial Examples with Input Diversity},
+    journal   = {CoRR},
+    volume    = {abs/1803.06978},
+    year      = {2018},
+}
+
+
+
+@article{XuARXIV2017,
+    title={Feature Squeezing: Detecting Adversarial Examples in Deep Neural Networks},
+    author={Xu, Weilin and Evans, David and Qi, Yanjun},
+    journal=ARXIV,
+    volume={abs/1704.01155},
+    year={2017}
+}
+
+@inproceedings{XueNIPS2016,
+    title={Visual dynamics: Probabilistic future frame synthesis via cross convolutional networks},
+    author={Xue, Tianfan and Wu, Jiajun and Bouman, Katherine and Freeman, Bill},
+    booktitle=NIPS,
+    _pages={91--99},
+    year={2016}
+}
+
+@article{YuanARXIV2017,
+    author    = {Xiaoyong Yuan and Pan He and Qile Zhu and Rajendra Rana Bhat and Xiaolin Li},
+    title     = {Adversarial Examples: Attacks and Defenses for Deep Learning},
+    journal   = ARXIV,
+    volume    = {abs/1712.07107},
+    year      = {2017},
+}
+
+@article{ZahavyARXIV2016,
+    title={Ensemble Robustness and Generalization of Stochastic Deep Learning Algorithms},
+    author={Zahavy, Tom and Kang, Bingyi and Sivak, Alex and Feng, Jiashi and Xu, Huan and Mannor, Shie},
+    journal=ARXIV,
+    volume={abs/1602.02389},
+    year={2016}
+}
+
+@inproceedings{ZantedschiAISEC2017,
+    title={Efficient defenses against adversarial attacks},
+    author={Zantedeschi, Valentina and Nicolae, Maria-Irina and Rawat, Ambrish},
+    booktitle=AISEC,
+    _pages={39--49},
+    year={2017},
+}
+
+@inproceedings{Zendel2017CVPR,
+    author    = {Oliver Zendel and Katrin Honauer and Markus Murschitz and Martin Humenberger and Gustavo Fern{\'{a}}ndez Dom{\'{\i}}nguez},
+    title     = {Analyzing Computer Vision Data - The Good, the Bad and the Ugly},
+    booktitle = CVPR,
+    _pages     = {6670--6680},
+    year      = {2017},
+}
+
+@inproceedings{ZengICCV2017,
+    author    = {Kuo{-}Hao Zeng and William B. Shen and De{-}An Huang and Min Sun and Juan Carlos Niebles},
+    title     = {Visual Forecasting by Imitating Dynamics in Natural Sequences},
+    booktitle = ICCV,
+    _pages     = {3018--3027},
+    year      = {2017},
+}
+
+@article{ZhaiARXIV2017,
+    author    = {Mengyao Zhai and Jiacheng Chen and Ruizhi Deng and Lei Chen and Ligeng Zhu and Greg Mori},
+    title     = {Learning to Forecast Videos of Human Activity with Multi-granularity
+    Models and Adaptive Rendering},
+    journal   = ARXIV,
+    volume    = {abs/1712.01955},
+    year      = {2017},
+}
+
+@article{ZhangARXIV2018,
+    title={The Unreasonable Effectiveness of Deep Features as a Perceptual Metric},
+    author={Richard Zhang and Phillip Isola and Alexei A. Efros and Eli Shechtman and Oliver Wang},
+    journal=ARXIV,
+    volume={abs/1801.03924},
+    year={2018}
+}
+
+@article{ZhangARXIV2018b,
+    title={Adversarial Manifold Learning},
+    author={Shufei Zhang and Kaizhu Huang and Jianke Zhu and Yang Liu},
+    journal=ARXIV,
+    volume={abs/1807.05832v1},
+    year={2018}
+}
+
+@article{ZhaoARXIV2017,
+    author    = {Zhengli Zhao and Dheeru Dua and Sameer Singh},
+    title     = {Generating Natural Adversarial Examples},
+    journal   = ARXIV,
+    volume    = {abs/1710.11342},
+    year      = {2017},
+}
+
+@article{ZhaoICLR2018,
+    author    = {Zhengli Zhao and Dheeru Dua and Sameer Singh},
+    title     = {Generating Natural Adversarial Examples},
+    journal   = ICLR,
+    year      = {2018},
+}
+
+@article{ZhengTG2010,
+    author    = {Qian Zheng and Andrei Sharf and Guowei Wan and Yangyan Li and Niloy J. Mitra and Daniel Cohen{-}Or and Baoquan Chen},
+    title     = {Non-local scan consolidation for 3D urban scenes},
+    journal   = TG,
+    volume    = {29},
+    number    = {4},
+    pages     = {94:1--94:9},
+    year      = {2010},
+}
+
+@inproceedings{Zhou2016CVPR,
+    author    = {Bolei Zhou and Aditya Khosla and {\`{A}}gata Lapedriza and Aude Oliva and Antonio Torralba},
+    title     = {Learning Deep Features for Discriminative Localization},
+    booktitle = CVPR,
+    _pages     = {2921--2929},
+    year      = {2016},
+}

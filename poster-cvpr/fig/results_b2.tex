@@ -1,0 +1,124 @@
+\documentclass[border={1px 1px 1px 1px},varwidth=24cm,convert]{standalone}
+\usepackage{graphicx}
+\usepackage{tikz}
+\graphicspath{{../../Stutz2019CVPR/}}
+\RequirePackage{snapshot}
+\newsavebox{\fmbox}
+\newenvironment{fmpage}[1]
+{\begin{lrbox}{\fmbox}\begin{minipage}{#1}}
+        {\end{minipage}\end{lrbox}\fbox{\usebox{\fmbox}}}
+\renewcommand{\rmdefault}{phv}
+\renewcommand{\sfdefault}{phv}
+\renewcommand{\ttdefault}{pcr}
+\input{commands}
+\begin{document}
+    \begin{fmpage}{2cm}
+        \vskip 0px
+        
+        \includegraphics[height=2cm]{{gfx/experiments/fonts_off/30_1_image_0}.png}
+        \vskip 2px
+        
+        \includegraphics[height=2cm]{{gfx/experiments/fonts_off/16_1_image_6}.png}
+        \vskip 2px
+        
+        \includegraphics[height=2cm]{{gfx/experiments/emnist_off/464_0_image_7}.png}
+        \vskip 2px
+        
+        %\includegraphics[height=2cm]{{gfx/experiments/emnist_off/858_0_image_3}.png}
+        %\vskip 2px
+        
+        \includegraphics[height=2cm]{{gfx/experiments/fashion_off/354_0_image_6}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries Shirt};\end{tikzpicture}
+    \end{fmpage}
+    \hskip 0.4cm
+    \begin{fmpage}{4.2cm}
+        \begin{minipage}[t]{2cm}
+            \vskip 0px
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_off/30_0_attack_1}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries E};\end{tikzpicture}
+            \vskip 2px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_off/16_1_attack_4}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries E};\end{tikzpicture}
+            \vskip 2px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/emnist_off/464_0_attack_3}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\Large\bfseries 3};\end{tikzpicture}
+            \vskip 2px
+            
+            %\includegraphics[height=2cm]{{gfx/experiments/emnist_off/858_0_attack_0}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries 0};\end{tikzpicture}
+            %\vskip 2px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fashion_off/354_0_attack_4}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries Coat};\end{tikzpicture}
+        \end{minipage}
+        \begin{minipage}[t]{2cm}
+            \vskip 0px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_off/30_0_perturbation_0.0838292}.png}
+            \vskip 2px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_off/16_1_perturbation_0.238741}.png}
+            \vskip 2px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/emnist_off/464_0_perturbation_0.178668}.png}
+            \vskip 2px
+            
+            %\includegraphics[height=2cm]{{gfx/experiments/emnist_off/858_0_perturbation_0.208487}.png}
+            %\vskip 2px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fashion_off/354_0_perturbation_0.261746}.png}
+        \end{minipage}
+    \end{fmpage}
+    \hskip 0.4cm
+    \begin{fmpage}{4.2cm}
+        \begin{minipage}[t]{2cm}
+            \vskip 0px
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_on/30_1_attack_5}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries F};\end{tikzpicture}
+            \vskip 2px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_learned_on_class/16_1_attack_5}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries F};\end{tikzpicture}
+            \vskip 2px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/emnist_learned_on_class/464_1_attack_3}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\Large\bfseries 3};\end{tikzpicture}
+            \vskip 2px
+            
+            %\includegraphics[height=2cm]{{gfx/experiments/emnist_learned_on_class/858_0_attack_0}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries 0};\end{tikzpicture}
+            %\vskip 2px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fashion_learned_on_class/354_0_attack_3}.png}\begin{tikzpicture}[overlay]\node[anchor=north west,red] at (-2,2){\large\bfseries Dress};\end{tikzpicture}
+        \end{minipage}
+        \begin{minipage}[t]{2cm}
+            \vskip 0px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_on/30_1_perturbation_0.993491}.png}
+            \vskip 2px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/fonts_learned_on_class/16_1_perturbation_0.805965}.png}
+            \vskip 2px
+            
+            \includegraphics[height=2cm]{{gfx/experiments/emnist_learned_on_class/464_1_perturbation_0.992153}.png}
+			\vskip 2px
+			
+			%\includegraphics[height=2cm]{{gfx/experiments/emnist_learned_on_class/858_0_perturbation_0.972695}.png}
+			%\vskip 2px
+			
+			\includegraphics[height=2cm]{{gfx/experiments/fashion_learned_on_class/354_0_perturbation_0.515965}.png}
+        \end{minipage}
+    \end{fmpage}
+    \hskip 0.2cm
+    \vskip 2px
+    
+    \begin{minipage}[t]{2cm}
+        \centering
+        \Large
+        \begin{tabular}{@{}c@{}}Original\\Image\end{tabular}
+    \end{minipage}
+    \hskip 0.4cm
+    \begin{minipage}[t]{4.2cm}
+        \centering
+        \Large
+        \begin{tabular}{@{}c@{}}Regular\\Adversarial Example\end{tabular}
+    \end{minipage}
+    \hskip 0.7cm
+    \begin{minipage}[t]{4.2cm}
+        \centering
+        \Large
+        \begin{tabular}{@{}c@{}}On-Manifold\\Adversarial Example\end{tabular}
+    \end{minipage}
+\end{document}

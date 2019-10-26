@@ -1,0 +1,17 @@
+\documentclass[varwidth=20cm]{standalone}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\input{commands}
+\input{style}
+\renewcommand{\rmdefault}{phv}
+\renewcommand{\sfdefault}{phv}
+\renewcommand{\ttdefault}{pcr}
+\begin{document}
+    \input{references}
+    
+    \ref{plot:Normal} Normal Training\hspace*{0.5cm}
+    \ref{plot:OffAdvTrain} Regular Adversarial Training\\
+    \ref{plot:OnAdvTrain} On-True-Manifold Adversarial Training\\
+    \ref{plot:STNAdvTrain} Adversarial Transformation Training\\
+    \ref{plot:OnClassAdvTrain} On-Learned-Manifold Adversarial Training
+\end{document}
