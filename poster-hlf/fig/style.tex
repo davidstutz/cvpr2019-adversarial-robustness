@@ -1,0 +1,110 @@
+\usepackage{xcolor}
+% Dark2
+%\definecolor{colorbrewer1}{RGB}{27,158,119}
+%\definecolor{colorbrewer2}{RGB}{217,95,2}
+%\definecolor{colorbrewer3}{RGB}{117,112,179}
+%\definecolor{colorbrewer4}{RGB}{231,41,138}
+%\definecolor{colorbrewer5}{RGB}{102,166,30}
+%\definecolor{colorbrewer6}{RGB}{230,171,2}
+%\definecolor{colorbrewer7}{RGB}{166,118,29}
+%\definecolor{colorbrewer8}{RGB}{102,102,102}
+% Set1
+\definecolor{colorbrewer0}{RGB}{45,45,45}
+\definecolor{colorbrewer1}{RGB}{228,26,28}
+\definecolor{colorbrewer2}{RGB}{55,126,184}
+\definecolor{colorbrewer3}{RGB}{77,175,74}
+\definecolor{colorbrewer4}{RGB}{152,78,163}
+\definecolor{colorbrewer5}{RGB}{255,127,0}
+\definecolor{colorbrewer6}{RGB}{255,255,51}
+\definecolor{colorbrewer7}{RGB}{166,86,40}
+\definecolor{colorbrewer8}{RGB}{247,129,191}
+\definecolor{colorbrewer9}{RGB}{153,153,153}
+\definecolor{colorbrewer10}{RGB}{24,167,181}
+\pgfplotsset{
+    % Main paper:
+    Normal/.style={colorbrewer0,solid,mark=diamond*,mark size=1pt,line width=1pt,mark options=solid},
+    OffAdvTrain/.style={colorbrewer1,solid,mark=diamond*,mark size=1pt,line width=1pt,mark options=solid},
+    OnAdvTrain/.style={colorbrewer2,solid,mark=diamond*,mark size=1pt,line width=1pt,mark options=solid},
+    OnClassAdvTrain/.style={colorbrewer3,solid,mark=diamond*,mark size=1pt,line width=1pt,mark options=solid},
+    STNAdvTrain/.style={colorbrewer4,solid,mark=diamond*,mark size=1pt,line width=1pt,mark options=solid},
+    STNAugm/.style={colorbrewer7,solid,mark=diamond*,mark size=1pt,line width=1pt,mark options=solid},
+    %
+    OnOffAdvTrain/.style={colorbrewer2,dashed,mark=diamond*,mark size=1pt,line width=1pt,mark options=solid},
+    OnOffClassAdvTrain/.style={colorbrewer3,dashed,mark=diamond*,mark size=1pt,line width=1pt,mark options=solid},
+    STNOffAdvTrain/.style={colorbrewer4,dashed,mark=diamond*,mark size=1pt,line width=1pt,mark options=solid},
+    %
+    BarOff/.style={colorbrewer1,fill=colorbrewer1,draw=colorbrewer1!60!black,line width=0.1pt,ybar interval,mark=no},
+    BarOn/.style={colorbrewer2,fill=colorbrewer2,draw=colorbrewer2!60!black,line width=0.1pt,ybar interval,mark=no},
+    BarTest/.style={colorbrewer0,fill=colorbrewer0,draw=colorbrewer0!60!black,line width=0.1pt,ybar interval,mark=no},
+    %
+    OffAdvTrain2/.style={colorbrewer1,dotted,mark=diamond*,mark size=1pt,line width=1pt,mark options=solid},
+    OnAdvTrain2/.style={colorbrewer2,dotted,mark=diamond*,mark size=1pt,line width=1pt,mark options=solid},
+    OnClassAdvTrain2/.style={colorbrewer3,dotted,mark=diamond*,mark size=1pt,line width=1pt,mark options=solid},
+    OffAdvTrain3/.style={colorbrewer1,dashed,mark=diamond*,mark size=1pt,line width=1pt,mark options=solid},
+    OnAdvTrain3/.style={colorbrewer2,dashed,mark=diamond*,mark size=1pt,line width=1pt,mark options=solid},
+    OnClassAdvTrain3/.style={colorbrewer3,dashed,mark=diamond*,mark size=1pt,line width=1pt,mark options=solid},
+    %
+    OnAugm/.style={colorbrewer2!50!white,solid,mark=diamond*,mark size=1pt,line width=0.75pt,mark options=solid},
+    OnClassAugm/.style={colorbrewer3!50!white,solid,mark=diamond*,mark size=1pt,line width=0.75pt,mark options=solid},
+    OffAugm/.style={colorbrewer1!40!white,solid,mark=diamond*,mark size=1pt,line width=0.75pt,mark options=solid},
+    OnDataAdvTrain/.style={colorbrewer10,solid,mark=diamond*,mark size=1pt,line width=1pt,mark options=solid},
+    %
+    Line/.style={
+        x label style={at={(axis description cs:0.5,0.03)},anchor=north},
+        y label style={at={(axis description cs:0.175,0.5)},anchor=south},
+        title style={at={(axis description cs:0.5,0.975)},anchor=south},
+        scaled x ticks=false,
+        xticklabel style={/pgf/number format/precision=3,/pgf/number format/fixed,font=\small},
+        scaled y ticks=false,
+        yticklabel style={/pgf/number format/precision=3,/pgf/number format/fixed,font=\small},
+        log ticks with fixed point,
+        width=5cm,
+        height=4.5cm,  
+        grid=both,
+        grid style={line width=.1pt,draw=black!30},
+        %major grid style={line width=.2pt,draw=gray!30},
+        %minor grid style={line width=.2pt,draw=gray!50},
+        minor tick num=1,
+        line width=0.75pt,
+    },
+    LineDisc/.style={
+        x label style={at={(axis description cs:0.5,0.03)},anchor=north},
+        y label style={at={(axis description cs:0.2,0.5)},anchor=south},
+        title style={at={(axis description cs:0.5,0.975)},anchor=south},
+        scaled x ticks=false,
+        xticklabel style={/pgf/number format/precision=3,/pgf/number format/fixed,font=\small},
+        scaled y ticks=false,
+        yticklabel style={/pgf/number format/precision=3,/pgf/number format/fixed,font=\small},
+        log ticks with fixed point,
+        width=5cm,
+        height=4.5cm,  
+        grid=both,
+        grid style={line width=.1pt,draw=black!30},
+        %major grid style={line width=.2pt,draw=gray!30},
+        %minor grid style={line width=.2pt,draw=gray!50},
+        minor tick num=1,
+        line width=0.75pt,
+    },
+    Histogram/.style={
+        area style=True,
+        legend style={at={(axis description cs:0.98,0.98)},anchor=north east,font=\small},
+        x label style={at={(axis description cs:0.5,0.03)},anchor=north},
+        y label style={at={(axis description cs:0.075,0.5)},anchor=south},
+        title style={at={(axis description cs:0.5,0.975)},anchor=south},
+        scaled x ticks=false,
+        xticklabel style={/pgf/number format/precision=2,/pgf/number format/fixed,font=\small},
+        scaled y ticks=false,
+        yticklabel style={/pgf/number format/precision=2,/pgf/number format/fixed,font=\small},
+        log ticks with fixed point,
+        height=5.5cm,
+        width=8cm,
+        ymin=0,
+        xmin=0,
+        %yticklabels={,,},
+        grid=both,
+        grid style={line width=.1pt,draw=gray!10},
+        major grid style={line width=.2pt,draw=gray!50},
+        minor tick num=1,
+        line width=0.75pt,
+    }
+}

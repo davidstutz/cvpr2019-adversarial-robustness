@@ -1,0 +1,75 @@
+\RequireVersions{
+  *{application}{TeX}     {1990/03/25 v3.x}
+  *{format} {LaTeX2e}     {2017/01/01 v2.e}
+  *{class}  {standalone}  {2015/07/15 v1.2}
+  *{package}{ifluatex}    {2016/05/16 v1.4}
+  *{package}{ifpdf}       {2016/05/14 v3.1}
+  *{package}{ifxetex}     {2010/09/12 v0.6}
+  *{package}{xkeyval}     {2014/12/03 v2.7a}
+  *{file}   {xkeyval.tex} {2014/12/03 v2.7a}
+  *{file}   {standalone.cfg}{2015/07/15 v1.2}
+  *{class}  {article}     {2014/09/29 v1.4h}
+  *{file}   {size10.clo}  {2014/09/29 v1.4h}
+  *{package}{varwidth}    {2009/03/30 v0.92;}
+  *{package}{graphicx}    {2014/10/28 v1.0g}
+  *{package}{graphics}    {2016/10/09 v1.0u}
+  *{package}{trig}        {2016/01/03 v1.10}
+  *{file}   {graphics.cfg}{2016/06/04 v1.11}
+  *{file}   {pdftex.def}  {2017/01/12 v0.06k}
+  *{package}{infwarerr}   {2016/05/16 v1.4}
+  *{package}{ltxcmds}     {2016/05/16 v1.23}
+  *{package}{tikz}        {2015/08/07 v3.0.1a}
+  *{package}{pgf}         {2015/08/07 v3.0.1a}
+  *{package}{pgfrcs}      {2015/08/07 v3.0.1a}
+  *{package}{everyshi}    {2001/05/15 v3.00}
+  *{file}   {pgfrcs.code.tex}{0000/00/00 v0.0}
+  *{package}{pgfcore}     {2010/04/11 v3.0.1a}
+  *{package}{pgfsys}      {2014/07/09 v3.0.1a}
+  *{file}   {pgfsys.code.tex}{0000/00/00 v0.0}
+  *{file}   {pgfsyssoftpath.code.tex}{2013/09/09 v1.9)}
+  *{file}   {pgfsysprotocol.code.tex}{2006/10/16 v1.4)}
+  *{package}{xcolor}      {2016/05/11 v2.12}
+  *{file}   {color.cfg}   {2016/01/02 v1.6}
+  *{file}   {pgfcore.code.tex}{0000/00/00 v0.0}
+  *{package}{pgfcomp-version-0-65}{2007/07/03 v3.0.1a}
+  *{package}{pgfcomp-version-1-18}{2007/07/23 v3.0.1a}
+  *{package}{pgffor}      {2013/12/13 v3.0.1a}
+  *{package}{pgfkeys}     {0000/00/00 v0.0}
+  *{file}   {pgfkeys.code.tex}{0000/00/00 v0.0}
+  *{package}{pgfmath}     {0000/00/00 v0.0}
+  *{file}   {pgfmath.code.tex}{0000/00/00 v0.0}
+  *{file}   {pgffor.code.tex}{0000/00/00 v0.0}
+  *{file}   {tikz.code.tex}{0000/00/00 v0.0}
+  *{package}{snapshot}    {2002/03/05 v1.14}
+  *{file}   {commands.tex}{0000/00/00 v0.0}
+  *{package}{amsmath}     {2016/11/05 v2.16a}
+  *{package}{amstext}     {2000/06/29 v2.01}
+  *{package}{amsgen}      {1999/11/30 v2.0}
+  *{package}{amsbsy}      {1999/11/29 v1.2d}
+  *{package}{amsopn}      {2016/03/08 v2.02}
+  *{package}{nicefrac}    {1998/08/04 v0.9b}
+  *{package}{ifthen}      {2014/09/29 v1.1c}
+  *{package}{amsthm}      {2015/03/04 v2.20.2}
+  *{package}{subcaption}  {2016/05/22 v1.1-161}
+  *{package}{caption}     {2016/02/21 v3.3-144}
+  *{package}{caption3}    {2016/05/22 v1.7-166}
+  *{package}{enumitem}    {2011/09/28 v3.5.2}
+  *{package}{xspace}      {2014/10/28 v1.13}
+  *{package}{tabularx}    {2016/02/03 v2.11}
+  *{package}{array}       {2016/10/06 v2.4d}
+  *{file}   {ot1phv.fd}   {2001/06/04 v1/phv.}
+  *{file}   {supp-pdf.mkii}{0000/00/00 v0.0}
+  *{package}{pdftexcmds}  {2016/05/21 v0.22}
+  *{package}{epstopdf-base}{2016/05/15 v2.6}
+  *{package}{grfext}      {2016/05/16 v1.2}
+  *{package}{kvdefinekeys}{2016/05/16 v1.4}
+  *{package}{kvoptions}   {2016/05/16 v3.12}
+  *{package}{kvsetkeys}   {2016/05/16 v1.17}
+  *{package}{etexcmds}    {2016/05/16 v1.6}
+  *{file}   {epstopdf-sys.cfg}{2010/07/13 v1.3}
+  *{file}   {../../Stutz2019CVPR/gfx/experiments/emnist_off/464_0_image_7.png}{0000/00/00 v0.0}
+  *{file}   {../../Stutz2019CVPR/gfx/experiments/emnist_off/464_0_attack_3.png}{0000/00/00 v0.0}
+  *{file}   {../../Stutz2019CVPR/gfx/experiments/emnist_off/464_0_perturbation_0.178668.png}{0000/00/00 v0.0}
+  *{file}   {../../Stutz2019CVPR/gfx/experiments/emnist_learned_on_class/464_1_attack_3.png}{0000/00/00 v0.0}
+  *{file}   {../../Stutz2019CVPR/gfx/experiments/emnist_learned_on_class/464_1_perturbation_0.992153.png}{0000/00/00 v0.0}
+}

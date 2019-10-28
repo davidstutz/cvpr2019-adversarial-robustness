@@ -1,0 +1,36 @@
+\scalebox{0}{
+    \begin{tikzpicture}
+    \begin{axis}[hide axis]
+        \addplot [Normal,forget plot] coordinates{(1,1)};\label{plot:Normal}
+        \addplot [OffAdvTrain,forget plot] coordinates{(1,1)};\label{plot:OffAdvTrain}
+        \addplot [OnAdvTrain,forget plot] coordinates{(1,1)};\label{plot:OnAdvTrain}
+        \addplot [OnClassAdvTrain,forget plot] coordinates{(1,1)};\label{plot:OnClassAdvTrain}
+        \addplot [STNAdvTrain,forget plot] coordinates{(1,1)};\label{plot:STNAdvTrain}
+        \addplot [STNAugm,forget plot] coordinates{(1,1)};\label{plot:STNAugm}
+        \addplot [OnOffAdvTrain,forget plot] coordinates{(1,1)};\label{plot:OnOffAdvTrain}
+        \addplot [OnOffClassAdvTrain,forget plot] coordinates{(1,1)};\label{plot:OnOffClassAdvTrain}
+        \addplot [STNOffAdvTrain,forget plot] coordinates{(1,1)};\label{plot:STNOffAdvTrain}
+        %
+        \addplot [OffAdvTrain2,forget plot] coordinates{(1,1)};\label{plot:OffAdvTrain2}
+        \addplot [OnAdvTrain2,forget plot] coordinates{(1,1)};\label{plot:OnAdvTrain2}
+        \addplot [OnClassAdvTrain2,forget plot] coordinates{(1,1)};\label{plot:OnClassAdvTrain2}
+        %
+        \addplot [OffAdvTrain3,forget plot] coordinates{(1,1)};\label{plot:OffAdvTrain3}
+        \addplot [OnAdvTrain3,forget plot] coordinates{(1,1)};\label{plot:OnAdvTrain3}
+        \addplot [OnClassAdvTrain3,forget plot] coordinates{(1,1)};\label{plot:OnClassAdvTrain3}
+        %
+        \addplot [OffAugm,forget plot] coordinates{(1,1)};\label{plot:OffAugm}
+        \addplot [OnAugm,forget plot] coordinates{(1,1)};\label{plot:OnAugm}
+        \addplot [OnClassAugm,forget plot] coordinates{(1,1)};\label{plot:OnClassAugm}
+        %
+        \addplot [OnDataAdvTrain,forget plot] coordinates{(1,1)};\label{plot:OnDataAdvTrain}
+        %
+        \addplot[only marks,Normal,mark=triangle*,mark size=3pt,forget plot] coordinates{(1,1)};\label{plot:NormalScatter}
+        \addplot[only marks,OffAdvTrain,mark=triangle*,mark size=3pt,forget plot] coordinates{(1,1)};\label{plot:OffAdvTrainScatter}
+        \addplot[only marks,OnAdvTrain,mark=triangle*,mark size=3pt,forget plot] coordinates{(1,1)};\label{plot:OnAdvTrainScatter}
+        \addplot[only marks,OnClassAdvTrain,mark=triangle*,mark size=3pt,forget plot] coordinates{(1,1)};\label{plot:OnClassAdvTrainScatter}
+        \addplot[only marks,STNAdvTrain,mark=triangle*,mark size=3pt,forget plot] coordinates{(1,1)};\label{plot:STNAdvTrainScatter}
+        \addplot[only marks,STNAugm,mark=triangle*,mark size=3pt,forget plot] coordinates{(1,1)};\label{plot:STNAugmScatter}
+    \end{axis}
+    \end{tikzpicture}
+}
